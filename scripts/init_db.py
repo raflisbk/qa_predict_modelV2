@@ -1,6 +1,6 @@
 """
-Database Initialization Script
-Executes schema.sql to create all tables
+Database Initialization Script - Enhanced Version
+Executes schema.sql to create all tables with better verification
 
 Usage:
     python scripts/init_db.py
@@ -43,20 +43,27 @@ def execute_schema(schema_sql):
         # Split by semicolon and execute each statement
         statements = [s.strip() for s in schema_sql.split(';') if s.strip()]
         
+        executed = 0
+        skipped = 0
+        failed = 0
+        
         for i, statement in enumerate(statements, 1):
             if statement:
                 try:
                     session.execute(text(statement))
+                    executed += 1
                     logger.debug(f"Executed statement {i}/{len(statements)}")
                 except Exception as e:
                     # Skip if table already exists
                     if "already exists" in str(e):
+                        skipped += 1
                         logger.debug(f"Statement {i} skipped (already exists)")
                     else:
+                        failed += 1
                         logger.warning(f"Statement {i} failed: {e}")
         
         session.commit()
-        logger.success("Schema executed successfully!")
+        logger.success(f"Schema executed: {executed} statements, {skipped} skipped, {failed} failed")
         
     except Exception as e:
         session.rollback()
@@ -67,33 +74,57 @@ def execute_schema(schema_sql):
 
 
 def verify_tables():
-    """Verify tables were created"""
+    """Verify tables were created - Enhanced version"""
     session = SessionLocal()
     
     try:
         logger.info("Verifying tables...")
         
-        # Query to get all tables
-        result = session.execute(text("""
-            SELECT table_name 
-            FROM information_schema.tables 
-            WHERE table_schema = 'public' 
-            ORDER BY table_name
+        # First, check what schemas exist
+        logger.debug("Checking available schemas...")
+        schema_result = session.execute(text("""
+            SELECT schema_name 
+            FROM information_schema.schemata 
+            WHERE schema_name NOT IN ('pg_catalog', 'information_schema')
+            ORDER BY schema_name
         """))
         
-        tables = [row[0] for row in result]
+        schemas = [row[0] for row in schema_result]
+        logger.debug(f"Available schemas: {', '.join(schemas)}")
         
-        if tables:
-            logger.success(f"Found {len(tables)} tables:")
-            for table in tables:
-                logger.info(f"  - {table}")  # Changed from ✓ to -
+        # Try to find tables in any schema
+        all_tables = []
+        for schema in schemas:
+            result = session.execute(text(f"""
+                SELECT table_name 
+                FROM information_schema.tables 
+                WHERE table_schema = '{schema}'
+                ORDER BY table_name
+            """))
+            
+            schema_tables = [row[0] for row in result]
+            if schema_tables:
+                logger.debug(f"Schema '{schema}': {len(schema_tables)} tables found")
+                all_tables.extend([(schema, table) for table in schema_tables])
+        
+        if all_tables:
+            logger.success(f"Found {len(all_tables)} tables:")
+            for schema, table in all_tables:
+                logger.info(f"  - {schema}.{table}")
             return True
         else:
-            logger.error("No tables found!")
+            logger.error("No tables found in any schema!")
+            logger.error(f"Checked schemas: {', '.join(schemas)}")
+            logger.error("This might indicate:")
+            logger.error("  1. Schema execution failed silently")
+            logger.error("  2. Tables created in different database")
+            logger.error("  3. Permission issue")
             return False
             
     except Exception as e:
         logger.error(f"Failed to verify tables: {e}")
+        import traceback
+        logger.error(traceback.format_exc())
         return False
     finally:
         session.close()
@@ -116,7 +147,11 @@ def main():
     logger.info("\n[1/3] Testing database connection...")
     if not test_connection():
         logger.error("Database connection failed!")
-        logger.error("Make sure Docker is running: docker-compose up -d")
+        logger.error("Check your .env settings:")
+        logger.error("  - POSTGRES_HOST")
+        logger.error("  - POSTGRES_DB")
+        logger.error("  - POSTGRES_USER")
+        logger.error("  - POSTGRES_PASSWORD")
         sys.exit(1)
     
     logger.success("Database connection OK")
@@ -151,6 +186,10 @@ def main():
         logger.info("="*60)
     else:
         logger.error("\nDatabase initialization failed!")
+        logger.error("Please check:")
+        logger.error("  1. Database permissions (user can CREATE TABLE)")
+        logger.error("  2. Database name in .env matches actual database")
+        logger.error("  3. Schema.sql syntax is correct")
         sys.exit(1)
 
 
