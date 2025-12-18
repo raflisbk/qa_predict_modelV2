@@ -1,12 +1,3 @@
-"""
-Collect DAILY data untuk ML training dataset.
-Save ke production tables: daily_trends, related_topics, related_queries
-
-Usage:
-    python collect_daily_data.py --keyword "shopee" --category "E-commerce & Shopping"
-    python collect_daily_data.py --all-categories  # Fetch all categories from config
-"""
-
 import os
 import sys
 import uuid
@@ -27,7 +18,6 @@ load_dotenv()
 
 
 def fetch_from_apify(keyword, api_token):
-    """Fetch daily data (1 month) dari Apify"""
     client = ApifyClient(api_token)
     
     run_input = {
