@@ -148,11 +148,9 @@ def parse_related_topics(results, keyword, category):
 
 
 def parse_related_queries(results, keyword, category):
-    """Parse related queries (top + rising)"""
     queries_data = []
     
     for result in results:
-        # Top queries
         top_queries = result.get("relatedQueries_top", [])
         for query in top_queries:
             queries_data.append({
