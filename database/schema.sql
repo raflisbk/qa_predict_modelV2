@@ -1,6 +1,8 @@
 -- postgresql 15+
 
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+-- CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+-- Note: If you get permission error, ask admin to run this command once:
+-- CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 -- tabel kategori
 CREATE TABLE IF NOT EXISTS categories (
