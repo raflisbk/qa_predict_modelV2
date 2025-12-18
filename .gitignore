@@ -48,6 +48,11 @@ besttime/
 .env.local
 .env.*.local
 
+# Test environment files (local testing only)
+.env.test
+docker-compose.test.yml
+TEST_*.md
+
 # Logs
 logs/
 *.log
