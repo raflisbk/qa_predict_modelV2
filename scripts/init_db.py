@@ -1,6 +1,6 @@
 """
-Database Initialization Script - Enhanced Version
-Executes schema.sql to create all tables with better verification
+Database Initialization Script - Fixed for PostgreSQL Functions
+Executes schema.sql properly handling dollar-quoted strings
 
 Usage:
     python scripts/init_db.py
@@ -10,13 +10,12 @@ import os
 import sys
 from pathlib import Path
 from loguru import logger
-from sqlalchemy import text
 
 # Add project root to path
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
-from src.database.db_manager import SessionLocal, engine, test_connection
+from src.database.db_manager import SessionLocal, test_connection
 
 
 def read_schema_file():
@@ -34,39 +33,34 @@ def read_schema_file():
 
 
 def execute_schema(schema_sql):
-    """Execute schema SQL"""
+    """Execute schema SQL - handles PostgreSQL functions properly"""
     session = SessionLocal()
     
     try:
         logger.info("Executing schema.sql...")
         
-        # Split by semicolon and execute each statement
-        statements = [s.strip() for s in schema_sql.split(';') if s.strip()]
+        # Use raw connection to execute entire schema at once
+        # This preserves dollar-quoted strings in functions
+        connection = session.connection().connection
+        cursor = connection.cursor()
         
-        executed = 0
-        skipped = 0
-        failed = 0
-        
-        for i, statement in enumerate(statements, 1):
-            if statement:
-                try:
-                    session.execute(text(statement))
-                    executed += 1
-                    logger.debug(f"Executed statement {i}/{len(statements)}")
-                except Exception as e:
-                    # Skip if table already exists
-                    if "already exists" in str(e):
-                        skipped += 1
-                        logger.debug(f"Statement {i} skipped (already exists)")
-                    else:
-                        failed += 1
-                        logger.warning(f"Statement {i} failed: {e}")
-        
-        session.commit()
-        logger.success(f"Schema executed: {executed} statements, {skipped} skipped, {failed} failed")
+        try:
+            cursor.execute(schema_sql)
+            connection.commit()
+            logger.success("Schema executed successfully!")
+        except Exception as e:
+            connection.rollback()
+            # Log error but don't fail if tables already exist
+            if "already exists" in str(e).lower():
+                logger.warning("Some objects already exist (this is OK)")
+                connection.commit()
+            else:
+                logger.error(f"Schema execution failed: {e}")
+                raise
+        finally:
+            cursor.close()
         
     except Exception as e:
-        session.rollback()
         logger.error(f"Failed to execute schema: {e}")
         raise
     finally:
@@ -74,14 +68,14 @@ def execute_schema(schema_sql):
 
 
 def verify_tables():
-    """Verify tables were created - Enhanced version"""
+    """Verify tables were created"""
     session = SessionLocal()
     
     try:
         logger.info("Verifying tables...")
         
-        # First, check what schemas exist
-        logger.debug("Checking available schemas...")
+        # Get all schemas
+        from sqlalchemy import text
         schema_result = session.execute(text("""
             SELECT schema_name 
             FROM information_schema.schemata 
@@ -92,7 +86,7 @@ def verify_tables():
         schemas = [row[0] for row in schema_result]
         logger.debug(f"Available schemas: {', '.join(schemas)}")
         
-        # Try to find tables in any schema
+        # Find tables in any schema
         all_tables = []
         for schema in schemas:
             result = session.execute(text(f"""
@@ -108,17 +102,13 @@ def verify_tables():
                 all_tables.extend([(schema, table) for table in schema_tables])
         
         if all_tables:
-            logger.success(f"Found {len(all_tables)} tables:")
+            logger.success(f"Found {len(all_tables)} tables/views:")
             for schema, table in all_tables:
                 logger.info(f"  - {schema}.{table}")
             return True
         else:
             logger.error("No tables found in any schema!")
             logger.error(f"Checked schemas: {', '.join(schemas)}")
-            logger.error("This might indicate:")
-            logger.error("  1. Schema execution failed silently")
-            logger.error("  2. Tables created in different database")
-            logger.error("  3. Permission issue")
             return False
             
     except Exception as e:
