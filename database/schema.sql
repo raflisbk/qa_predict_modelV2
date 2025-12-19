@@ -32,6 +32,7 @@ CREATE TABLE IF NOT EXISTS daily_trends (
     raw_data JSONB,
     collection_id UUID,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    collected_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     UNIQUE(keyword, category, region, date)
 );
 
@@ -56,6 +57,7 @@ CREATE TABLE IF NOT EXISTS hourly_trends (
     raw_data JSONB,
     collection_id UUID,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    collected_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     UNIQUE(keyword, category, region, datetime)
 );
 
