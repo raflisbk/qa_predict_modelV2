@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS daily_trends (
     holiday_name VARCHAR(255),
     trending_event TEXT,
     raw_data JSONB,
+    collection_id UUID,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     UNIQUE(keyword, category, region, date)
 );
@@ -53,6 +54,7 @@ CREATE TABLE IF NOT EXISTS hourly_trends (
     is_weekend BOOLEAN,
     time_of_day VARCHAR(20),
     raw_data JSONB,
+    collection_id UUID,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     UNIQUE(keyword, category, region, datetime)
 );
@@ -77,6 +79,7 @@ CREATE TABLE IF NOT EXISTS related_topics (
     formatted_value VARCHAR(50),
     link TEXT,
     is_rising BOOLEAN DEFAULT FALSE,
+    collection_id UUID,
     collected_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -95,6 +98,7 @@ CREATE TABLE IF NOT EXISTS related_queries (
     formatted_value VARCHAR(50),
     link TEXT,
     is_rising BOOLEAN DEFAULT FALSE,
+    collection_id UUID,
     collected_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
