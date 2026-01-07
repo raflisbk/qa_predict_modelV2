@@ -1,5 +1,92 @@
 # Troubleshooting Guide
 
+## Error: Docker build fails on requirements.txt
+
+### Symptoms
+```
+ERROR: Could not find a version that satisfies the requirement...
+ERROR: No matching distribution found for...
+```
+
+Or:
+```
+error: invalid command 'bdist_wheel'
+error: Failed building wheel for...
+```
+
+### Root Cause
+1. **Merge conflict markers** in requirements.txt (<<<<<<, ======, >>>>>>)
+2. **Missing system dependencies** (gcc, g++, etc.)
+3. **Network issues** downloading packages
+4. **Platform incompatibility** (ARM vs x86_64)
+
+### Solutions
+
+#### Fix 1: Verify requirements.txt is clean
+
+```bash
+# Check for conflict markers
+grep -E "<<<<<<|======|>>>>>>" requirements.txt
+
+# Should return nothing. If it returns lines, file has merge conflicts!
+```
+
+**If conflicts found:**
+```bash
+# Pull latest version
+git pull origin main
+
+# Force overwrite local file
+git checkout origin/main -- requirements.txt
+```
+
+#### Fix 2: Clean Docker cache and rebuild
+
+```bash
+# Remove all containers and images
+docker-compose down
+docker system prune -a -f
+
+# Rebuild from scratch
+docker-compose build --no-cache
+docker-compose up -d
+```
+
+#### Fix 3: Check system dependencies in Dockerfile
+
+Dockerfile should have:
+```dockerfile
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    postgresql-client \
+    && rm -rf /var/lib/apt/lists/*
+```
+
+#### Fix 4: Platform-specific build (ARM Mac)
+
+For Apple Silicon (M1/M2/M3):
+```bash
+# Build for x86_64 platform
+docker-compose build --platform linux/amd64
+docker-compose up -d
+```
+
+#### Fix 5: Incremental install for debugging
+
+```bash
+# Enter a temporary container
+docker run -it --rm python:3.11-slim bash
+
+# Install dependencies one by one to find problematic package
+pip install fastapi
+pip install uvicorn[standard]
+pip install pandas
+# ... etc
+```
+
+---
+
 ## Error: "Connection refused" port 5433
 
 ### Symptoms
