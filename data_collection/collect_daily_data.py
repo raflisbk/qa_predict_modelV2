@@ -23,7 +23,11 @@ def fetch_from_apify(keyword, api_token):
     run_input = {
         "searchTerms": [keyword],
         "geo": "ID",
+<<<<<<< HEAD
         "timeRange": "today 3-m",  
+=======
+        "timeRange": "today 3-m",  # 3 months untuk daily data
+>>>>>>> 4d4e354d0947c018912709e28afb4cf45f73e9f9
         "category": "",
         "hl": "id",
         "isPublic": False
@@ -39,9 +43,17 @@ def fetch_from_apify(keyword, api_token):
     
     logger.success(f"Got {len(results)} results from Apify")
     
+<<<<<<< HEAD
     if results:
         logger.debug(f"Available keys in response: {list(results[0].keys())}")
         
+=======
+    # Debug: Log available keys in response
+    if results:
+        logger.debug(f"Available keys in response: {list(results[0].keys())}")
+        
+        # Check if interestOverTime data exists
+>>>>>>> 4d4e354d0947c018912709e28afb4cf45f73e9f9
         if "interestOverTime_timelineData" in results[0]:
             timeline_count = len(results[0].get("interestOverTime_timelineData", []))
             logger.info(f"Found {timeline_count} timeline data points")
@@ -80,6 +92,10 @@ def parse_daily_data(results, keyword, category):
             
             interest_value = point.get("value", [0])[0] if point.get("value") else 0
             
+<<<<<<< HEAD
+=======
+            # For monthly timerange, all data is daily
+>>>>>>> 4d4e354d0947c018912709e28afb4cf45f73e9f9
             daily_data.append({
                 "keyword": keyword,
                 "category": category,
