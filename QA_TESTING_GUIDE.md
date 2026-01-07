@@ -18,6 +18,16 @@ cd qa_predict_modelV2
 
 ## 🏃 Step 2: Start Docker Services
 
+⚠️ **IMPORTANT**: Jika sebelumnya pernah run Docker, hapus volume lama dulu:
+```bash
+# Stop & remove existing containers + volumes
+docker-compose down -v
+
+# Verify volume is removed
+docker volume ls | grep postgres
+```
+
+**Start fresh:**
 ```bash
 docker-compose up -d
 ```
@@ -31,6 +41,8 @@ docker-compose up -d
 ✓ Container besttime_api starting
 ✓ Container besttime_api started
 ```
+
+📌 **Why `-v` flag?** PostgreSQL only initializes database scripts (`init-db.sh`, `schema.sql`, `seed_data.sql`) on **first run** when volume is empty. If volume already exists, scripts are skipped!
 
 ---
 
