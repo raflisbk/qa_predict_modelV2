@@ -50,7 +50,7 @@ else
     exit 1
 fi
 
-log "Step 4/4: Verifying tables..."
+log "Step 4/6: Verifying tables..."
 table_count=$(check_tables)
 log "Found $table_count tables in public schema"
 
@@ -59,12 +59,35 @@ if [ "$table_count" -gt 0 ]; then
     log ""
     log "Table list:"
     psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" -c "\dt"
-    log ""
-    log "View list:"
-    psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" -c "\dv"
 else
     log "✗ ERROR: No tables found! Schema execution may have failed."
     exit 1
+fi
+
+log "Step 5/6: Loading seed data..."
+if [ -f /docker-entrypoint-initdb.d/seed_data.sql ]; then
+    log "Found seed_data.sql (15.9 MB), loading..."
+    psql -v ON_ERROR_STOP=0 -U "$POSTGRES_USER" -d "$POSTGRES_DB" -f /docker-entrypoint-initdb.d/seed_data.sql 2>&1 | tee /tmp/seed-execution.log
+    
+    # Check if there were any errors
+    if grep -i "error" /tmp/seed-execution.log | grep -v "duplicate key" | grep -v "already exists" > /dev/null; then
+        log "⚠ Warning: Some errors occurred during seed data load (see above)"
+        log "This might be OK if data already exists"
+    else
+        log "✓ Seed data loaded successfully"
+    fi
+else
+    log "⚠ Warning: seed_data.sql not found, database will be empty"
+fi
+
+log "Step 6/6: Data verification..."
+hourly_count=$(psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" -t -c "SELECT COUNT(*) FROM hourly_trends;" | tr -d ' ')
+log "Rows in hourly_trends: $hourly_count"
+
+if [ "$hourly_count" -gt 0 ]; then
+    log "✓ Data loaded successfully!"
+else
+    log "⚠ Warning: hourly_trends table is empty"
 fi
 
 echo ""
@@ -73,5 +96,6 @@ echo "DATABASE INITIALIZATION COMPLETED"
 echo "=========================================="
 echo "Database: $POSTGRES_DB"
 echo "Tables: $table_count"
+echo "Data rows (hourly_trends): $hourly_count"
 echo "Status: READY ✓"
 echo "=========================================="
