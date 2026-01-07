@@ -84,8 +84,13 @@ class ApifyGoogleTrendsClient:
         self,
         search_terms: List[str],
         geo: str = "ID",
+<<<<<<< HEAD
+        time_range: str = "now 1-d",  # 1 day = 24 hours (optimal)
+        category: str = "",  # Empty string = all categories
+=======
         time_range: str = "now 7-d",
         category: int = 0,
+>>>>>>> 4d4e354d0947c018912709e28afb4cf45f73e9f9
         max_retries: int = 3
     ) -> List[Dict]:
         """
@@ -94,8 +99,16 @@ class ApifyGoogleTrendsClient:
         Args:
             search_terms: List of keywords to search
             geo: Geographic location (default: ID for Indonesia)
+<<<<<<< HEAD
+            time_range: Time range (default: "now 1-d" = 24 hours)
+                       - "now 1-d" (24h): Fast, sufficient for model (8-10s)
+                       - "now 7-d" (168h): Slow, overkill (40-50s)
+            category: Google Trends category code as string (default: "" = all categories)
+                     Valid values: "", "3", "47", "44", "22", "12", "5", "7", etc.
+=======
             time_range: Time range (e.g., "now 7-d", "now 1-d")
             category: Google Trends category code (0 = all)
+>>>>>>> 4d4e354d0947c018912709e28afb4cf45f73e9f9
             max_retries: Max retry attempts
             
         Returns:
@@ -105,7 +118,11 @@ class ApifyGoogleTrendsClient:
             "searchTerms": search_terms,
             "geo": geo,
             "timeRange": time_range,
+<<<<<<< HEAD
+            "category": category,  # Use as-is (empty string for all)
+=======
             "category": category,
+>>>>>>> 4d4e354d0947c018912709e28afb4cf45f73e9f9
             "isPublic": False,
             "maxItems": 1000
         }

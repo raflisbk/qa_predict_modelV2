@@ -1,0 +1,25 @@
+{
+  "model": "LSTM (PyTorch) - All Keywords",
+  "forecast_horizon": "7 days",
+  "lookback": 14,
+  "train": {
+    "MAE": 4.347533401291049,
+    "RMSE": 6.146446358784371,
+    "R2": 0.9185181423368887,
+    "Error_Pct": 6.858477984642894
+  },
+  "test": {
+    "MAE": 5.510216344017832,
+    "RMSE": 8.033561965339551,
+    "R2": 0.8643663155824413,
+    "Error_Pct": 8.663024369913398
+  },
+  "training_samples": 2880,
+  "test_samples": 720,
+  "architecture": "LSTM 128->64 + Dense 32",
+  "training": {
+    "epochs_run": 500,
+    "best_val_loss": 0.006453811656683683,
+    "final_lr": 0.0005120000000000001
+  }
+}

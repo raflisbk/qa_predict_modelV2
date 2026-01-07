@@ -1,7 +1,14 @@
 services:
+<<<<<<< HEAD
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: besttime_postgres
+=======
   postgres:
     image: postgres:15-alpine
     container_name: besttimev2
+>>>>>>> 4d4e354d0947c018912709e28afb4cf45f73e9f9
     restart: unless-stopped
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
@@ -12,21 +19,72 @@ services:
       - "${POSTGRES_PORT:-5432}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+<<<<<<< HEAD
+      - ./database:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-best_time_post}"]
+=======
       - ./database/init-db.sh:/docker-entrypoint-initdb.d/00-init.sh
       - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
     healthcheck:
       test: ["CMD-SHELL", "psql -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-best_time_post} -c 'SELECT COUNT(*) FROM categories;' || exit 1"]
+>>>>>>> 4d4e354d0947c018912709e28afb4cf45f73e9f9
       interval: 10s
       timeout: 5s
       retries: 10
       start_period: 30s
     networks:
+<<<<<<< HEAD
+      - besttime_network
+
+  # FastAPI Application
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: besttime_api
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      # Database
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-best_time_post}
+      # API
+      API_HOST: 0.0.0.0
+      API_PORT: 8000
+      # Optional: Apify (for production)
+      APIFY_API_TOKEN: ${APIFY_API_TOKEN:-}
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/app/models:ro
+      - ./config:/app/config:ro
+      - ./logs:/app/logs
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/api/v1/best-time/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - besttime_network
+=======
       - best_time_post_network
+>>>>>>> 4d4e354d0947c018912709e28afb4cf45f73e9f9
 
 volumes:
   postgres_data:
     driver: local
 
 networks:
+<<<<<<< HEAD
+  besttime_network:
+=======
   best_time_post_network:
+>>>>>>> 4d4e354d0947c018912709e28afb4cf45f73e9f9
     driver: bridge

@@ -1,0 +1,26 @@
+{
+  "model_version": "1.0",
+  "model_type": "LightGBM Regression",
+  "trained_at": "2026-01-06T16:02:51.048152",
+  "data": {
+    "days_back": 7,
+    "train_samples": 5441,
+    "test_samples": 1361,
+    "total_features": 30,
+    "categories": 10
+  },
+  "performance": {
+    "mae": 2.751419545179744,
+    "rmse": 4.205934977087815,
+    "mse": 17.689889031490683,
+    "r2": 0.9698230357400487,
+    "explained_variance_pct": 96.98230357400487,
+    "best_iteration": 996
+  },
+  "model_params": {
+    "n_estimators": 1000,
+    "learning_rate": 0.02,
+    "max_depth": 10,
+    "num_leaves": 127
+  }
+}
