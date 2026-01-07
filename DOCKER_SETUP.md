@@ -159,7 +159,7 @@ ports:
 Best time post v2/
 ├── docker-compose.yml      # Docker orchestration
 ├── Dockerfile              # API container image
-├── .env.docker             # Environment variables
+├── .env.example             # Environment variables
 ├── api_start.py           # API entry point
 ├── requirements.txt       # Python dependencies
 ├── models/                # ML models (mounted as volume)
@@ -183,7 +183,7 @@ Best time post v2/
 
 ## ⚙️ Configuration
 
-### Environment Variables (.env.docker)
+### Environment Variables (.env.example)
 
 ```env
 # Database
@@ -242,7 +242,7 @@ Edit `docker-compose.yml` untuk customize:
 ## 🔐 Security Notes
 
 - Default credentials untuk development/QA
-- Untuk production, ganti password di `.env.docker`
+- Untuk production, ganti password di `.env.example`
 - Database tidak expose ke public (hanya localhost:5432)
 - API CORS enabled untuk testing
 

@@ -5,7 +5,7 @@
 | File | Purpose | Git Tracked | Used By |
 |------|---------|-------------|---------|
 | `.env` | **Developer local** | ❌ No (gitignored) | You (DEV) |
-| `.env.docker` | **QA template** | ✅ Yes | QA (Docker) |
+| `.env.example` | **QA template** | ✅ Yes | QA (Docker) |
 | `.env.example` | Reference template | ✅ Yes | Documentation |
 | `.env.test` | Testing only | ❌ No (gitignored) | Local tests |
 
@@ -21,7 +21,7 @@ POSTGRES_HOST=localhost  # ← Connect to Docker from outside
 
 ### **QA (Docker):**
 ```bash
-File: .env (copied from .env.docker)
+File: .env (copied from .env.example)
 POSTGRES_HOST=postgres   # ← Container DNS name
 ```
 
@@ -47,7 +47,7 @@ APIFY_API_TOKEN=YOUR_TOKEN_HERE  # Your actual Apify token (kept secret)
 
 ---
 
-### 2️⃣ **`.env.docker` - QA Template (IN GIT)**
+### 2️⃣ **`.env.example` - QA Template (IN GIT)**
 
 **Location:** Project root (tracked in Git)  
 **Used by:** QA, as template to create their `.env`  
@@ -90,15 +90,14 @@ cd qa_predict_modelV2
 ```
 
 **What QA gets:**
-- ✅ `.env.docker` (template)
-- ✅ `.env.example` (reference)
+- ✅ `.env.example` (template for QA)
 - ❌ `.env` (NOT in Git, they must create it)
 - ❌ `.env.test` (NOT in Git)
 
 ### Step 2: Create `.env` from Template
 ```bash
 # QA must do this BEFORE docker-compose up
-cp .env.docker .env
+cp .env.example .env
 ```
 
 **Result:**
@@ -112,7 +111,7 @@ docker-compose up -d
 ```
 
 **Docker Compose reads:**
-- `.env` file (just created from `.env.docker`)
+- `.env` file (just created from `.env.example`)
 - Uses `POSTGRES_HOST=postgres` (internal DNS)
 
 ---
@@ -139,7 +138,7 @@ python api_start.py
 
 ### QA - Running in Docker
 
-**File:** `.env` (copied from `.env.docker`)
+**File:** `.env` (copied from `.env.example`)
 ```env
 POSTGRES_HOST=postgres           # ← Inside Docker network
 APIFY_API_TOKEN=PLACEHOLDER_TOKEN  # Placeholder
@@ -167,7 +166,7 @@ docker-compose up -d  # No .env file!
 **✅ Fix:**
 ```bash
 # ✅ CORRECT
-cp .env.docker .env
+cp .env.example .env
 docker-compose up -d
 ```
 
@@ -181,7 +180,7 @@ POSTGRES_HOST=localhost  # Wrong! Containers can't resolve "localhost" to postgr
 
 **✅ Fix:**
 ```bash
-# ✅ CORRECT (from .env.docker)
+# ✅ CORRECT (from .env.example)
 POSTGRES_HOST=postgres  # Docker DNS resolves this
 ```
 
@@ -198,8 +197,8 @@ git commit -m "Add env file"
 **✅ Fix:**
 ```bash
 # ✅ CORRECT - .env is gitignored
-# Only commit .env.docker (with placeholder token)
-git add .env.docker
+# Only commit .env.example (with placeholder token)
+git add .env.example
 git commit -m "Update Docker template"
 ```
 
@@ -207,7 +206,7 @@ git commit -m "Update Docker template"
 
 ## 📊 File Comparison
 
-| Variable | `.env` (DEV) | `.env.docker` (QA Template) |
+| Variable | `.env` (DEV) | `.env.example` (QA Template) |
 |----------|--------------|---------------------------|
 | `POSTGRES_HOST` | `localhost` | `postgres` |
 | `APIFY_API_TOKEN` | Real token | `PLACEHOLDER_TOKEN` |
@@ -221,16 +220,16 @@ git commit -m "Update Docker template"
 ### **For You (Developer):**
 - ✅ Keep using `.env` with `POSTGRES_HOST=localhost`
 - ✅ Your file is gitignored (safe)
-- ✅ Don't change `.env.docker` (QA needs it)
+- ✅ Don't change `.env.example` (QA needs it)
 
 ### **For QA:**
-- ✅ Copy `.env.docker` to `.env` BEFORE docker-compose
+- ✅ Copy `.env.example` to `.env` BEFORE docker-compose
 - ✅ File has `POSTGRES_HOST=postgres` (correct for Docker)
 - ✅ Can add real APIFY token if needed (optional)
 
 ### **Files to Update:**
 - **Never commit:** `.env`, `.env.test`
-- **Safe to commit:** `.env.docker`, `.env.example`
+- **Safe to commit:** `.env.example`, `.env.example`
 
 ---
 
@@ -245,7 +244,7 @@ ls -la | grep "\.env"
 git ls-files | grep env
 
 # Expected in Git:
-# .env.docker  ✅
+# .env.example  ✅
 # .env.example ✅
 ```
 
@@ -271,12 +270,12 @@ cat .gitignore | grep "\.env"
    - Keep real API tokens in `.env` only
 
 2. **QA:**
-   - Always run: `cp .env.docker .env` before first Docker start
+   - Always run: `cp .env.example .env` before first Docker start
    - Can modify `.env` locally (add real tokens if needed)
    - Their `.env` stays local (gitignored)
 
 3. **Team:**
-   - Update `.env.docker` when adding new required variables
+   - Update `.env.example` when adding new required variables
    - Update `.env.example` for documentation
    - Never commit real credentials
 
@@ -287,7 +286,7 @@ cat .gitignore | grep "\.env"
 ```bash
 git clone https://github.com/raflisbk/qa_predict_modelV2.git && \
 cd qa_predict_modelV2 && \
-cp .env.docker .env && \
+cp .env.example .env && \
 docker-compose up -d
 ```
 

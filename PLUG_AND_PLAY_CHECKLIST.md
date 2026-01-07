@@ -14,7 +14,7 @@
 2. ✅ **requirements.txt** - Clean, 89 packages (no merge conflicts)
 3. ✅ **database/init-db.sh** - NOW loads seed_data.sql automatically
 4. ✅ **database/seed_data.sql** - 15.9 MB, 17,081 rows (tracked in Git)
-5. ✅ **.env.docker** - Complete configuration template
+5. ✅ **.env.example** - Complete configuration template
 6. ✅ **config/categories.json** - Tracked in Git
 7. ✅ **config/indonesia_events.json** - Tracked in Git
 8. ✅ **models/** - All required model files tracked
@@ -46,7 +46,7 @@ cd qa_predict_modelV2
 ### Step 2: Setup Environment
 ```bash
 # Copy default Docker environment
-cp .env.docker .env
+cp .env.example .env
 
 # (Optional) Edit if needed
 # notepad .env  # Windows
@@ -149,9 +149,9 @@ SELECT DISTINCT category FROM hourly_trends ORDER BY category;
 **Solution:** Added Step 5/6 to init-db.sh to load and verify seed data  
 **Status:** ✅ Committed (816bc5e)
 
-### Issue 4: Incomplete .env.docker ✅ FIXED
+### Issue 4: Incomplete .env.example ✅ FIXED
 **Problem:** Missing Google Trends, Model Training, ONNX configs  
-**Solution:** Added all required environment variables to .env.docker  
+**Solution:** Added all required environment variables to .env.example  
 **Status:** ✅ Committed (816bc5e)
 
 ### Issue 5: requirements.txt Merge Conflicts ✅ FIXED
@@ -191,7 +191,7 @@ docker-compose up -d  # No .env file!
 ### ✅ DO: Create .env first
 ```bash
 # ✅ CORRECT
-cp .env.docker .env
+cp .env.example .env
 docker-compose up -d
 ```
 
@@ -276,7 +276,7 @@ QA deployment is **successful** if:
 Before considering deployment complete:
 
 - [ ] `git clone` successful
-- [ ] `.env` file created from `.env.docker`
+- [ ] `.env` file created from `.env.example`
 - [ ] `docker-compose up -d --build` successful
 - [ ] Both containers show `(healthy)` in `docker-compose ps`
 - [ ] Database verification returns 17,081 rows

@@ -20,7 +20,7 @@ cd qa_predict_modelV2
 
 ⚠️ **IMPORTANT**: Environment variables harus di-set **SEBELUM** menjalankan `docker-compose up -d`!
 
-**Default values (.env.docker sudah ada):**
+**Default values (.env.example sudah ada):**
 ```env
 POSTGRES_HOST=postgres
 POSTGRES_PORT=5432
@@ -32,7 +32,7 @@ POSTGRES_DB=best_time_post
 **Jika perlu custom configuration:**
 ```bash
 # 1. Copy template
-cp .env.docker .env
+cp .env.example .env
 
 # 2. Edit values (SEBELUM docker-compose!)
 notepad .env  # Windows
