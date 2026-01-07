@@ -63,12 +63,18 @@ API_TAGS = [
     {"name": "Prediction", "description": "Endpoint prediksi tren"}
 ]
 
+# --- Routers ---
+from src.app.routers import best_time
+
 app = FastAPI(
     title=API_TITLE,
     description=API_DESCRIPTION,
-    version="1.4.0",
+    version="1.5.0",
     openapi_tags=API_TAGS
 )
+
+# Include Routers
+app.include_router(best_time.router)
 
 # Add rate limiter
 app.state.limiter = limiter

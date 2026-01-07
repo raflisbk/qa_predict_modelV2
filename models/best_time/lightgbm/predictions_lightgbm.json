@@ -1,0 +1,352 @@
+{
+  "E-commerce & Shopping": [
+    {
+      "category": "E-commerce & Shopping",
+      "day_name": "Sunday",
+      "date": "January 11, 2026",
+      "time_window": "07:00 - 10:00",
+      "start_datetime": "2026-01-11T07:00:00",
+      "end_datetime": "2026-01-11T10:00:00",
+      "avg_interest": 40.44,
+      "max_interest": 40.45,
+      "confidence_score": 0.631
+    },
+    {
+      "category": "E-commerce & Shopping",
+      "day_name": "Sunday",
+      "date": "January 11, 2026",
+      "time_window": "21:00 - 00:00",
+      "start_datetime": "2026-01-11T21:00:00",
+      "end_datetime": "2026-01-12T00:00:00",
+      "avg_interest": 40.43,
+      "max_interest": 40.43,
+      "confidence_score": 0.631
+    },
+    {
+      "category": "E-commerce & Shopping",
+      "day_name": "Saturday",
+      "date": "January 10, 2026",
+      "time_window": "07:00 - 10:00",
+      "start_datetime": "2026-01-10T07:00:00",
+      "end_datetime": "2026-01-10T10:00:00",
+      "avg_interest": 40.41,
+      "max_interest": 40.42,
+      "confidence_score": 0.631
+    }
+  ],
+  "Education & Career": [
+    {
+      "category": "Education & Career",
+      "day_name": "Wednesday",
+      "date": "January 07, 2026",
+      "time_window": "00:00 - 03:00",
+      "start_datetime": "2026-01-07T00:00:00",
+      "end_datetime": "2026-01-07T03:00:00",
+      "avg_interest": 93.38,
+      "max_interest": 93.41,
+      "confidence_score": 0.805
+    },
+    {
+      "category": "Education & Career",
+      "day_name": "Tuesday",
+      "date": "January 13, 2026",
+      "time_window": "00:00 - 03:00",
+      "start_datetime": "2026-01-13T00:00:00",
+      "end_datetime": "2026-01-13T03:00:00",
+      "avg_interest": 93.37,
+      "max_interest": 93.4,
+      "confidence_score": 0.805
+    },
+    {
+      "category": "Education & Career",
+      "day_name": "Thursday",
+      "date": "January 08, 2026",
+      "time_window": "00:00 - 03:00",
+      "start_datetime": "2026-01-08T00:00:00",
+      "end_datetime": "2026-01-08T03:00:00",
+      "avg_interest": 93.36,
+      "max_interest": 93.39,
+      "confidence_score": 0.805
+    }
+  ],
+  "Entertainment": [
+    {
+      "category": "Entertainment",
+      "day_name": "Wednesday",
+      "date": "January 07, 2026",
+      "time_window": "13:00 - 16:00",
+      "start_datetime": "2026-01-07T13:00:00",
+      "end_datetime": "2026-01-07T16:00:00",
+      "avg_interest": 100.0,
+      "max_interest": 100.0,
+      "confidence_score": 0.828
+    },
+    {
+      "category": "Entertainment",
+      "day_name": "Wednesday",
+      "date": "January 07, 2026",
+      "time_window": "16:00 - 19:00",
+      "start_datetime": "2026-01-07T16:00:00",
+      "end_datetime": "2026-01-07T19:00:00",
+      "avg_interest": 100.0,
+      "max_interest": 100.0,
+      "confidence_score": 0.828
+    },
+    {
+      "category": "Entertainment",
+      "day_name": "Wednesday",
+      "date": "January 07, 2026",
+      "time_window": "19:00 - 22:00",
+      "start_datetime": "2026-01-07T19:00:00",
+      "end_datetime": "2026-01-07T22:00:00",
+      "avg_interest": 100.0,
+      "max_interest": 100.0,
+      "confidence_score": 0.828
+    }
+  ],
+  "Fashion & Beauty": [
+    {
+      "category": "Fashion & Beauty",
+      "day_name": "Wednesday",
+      "date": "January 07, 2026",
+      "time_window": "12:00 - 15:00",
+      "start_datetime": "2026-01-07T12:00:00",
+      "end_datetime": "2026-01-07T15:00:00",
+      "avg_interest": 66.97,
+      "max_interest": 66.97,
+      "confidence_score": 0.719
+    },
+    {
+      "category": "Fashion & Beauty",
+      "day_name": "Friday",
+      "date": "January 09, 2026",
+      "time_window": "12:00 - 15:00",
+      "start_datetime": "2026-01-09T12:00:00",
+      "end_datetime": "2026-01-09T15:00:00",
+      "avg_interest": 66.97,
+      "max_interest": 66.98,
+      "confidence_score": 0.719
+    },
+    {
+      "category": "Fashion & Beauty",
+      "day_name": "Wednesday",
+      "date": "January 07, 2026",
+      "time_window": "22:00 - 01:00",
+      "start_datetime": "2026-01-07T22:00:00",
+      "end_datetime": "2026-01-08T01:00:00",
+      "avg_interest": 66.96,
+      "max_interest": 66.98,
+      "confidence_score": 0.718
+    }
+  ],
+  "Finance & Investment": [
+    {
+      "category": "Finance & Investment",
+      "day_name": "Sunday",
+      "date": "January 11, 2026",
+      "time_window": "00:00 - 03:00",
+      "start_datetime": "2026-01-11T00:00:00",
+      "end_datetime": "2026-01-11T03:00:00",
+      "avg_interest": 70.64,
+      "max_interest": 70.7,
+      "confidence_score": 0.729
+    },
+    {
+      "category": "Finance & Investment",
+      "day_name": "Thursday",
+      "date": "January 08, 2026",
+      "time_window": "00:00 - 03:00",
+      "start_datetime": "2026-01-08T00:00:00",
+      "end_datetime": "2026-01-08T03:00:00",
+      "avg_interest": 70.58,
+      "max_interest": 70.63,
+      "confidence_score": 0.729
+    },
+    {
+      "category": "Finance & Investment",
+      "day_name": "Saturday",
+      "date": "January 10, 2026",
+      "time_window": "00:00 - 03:00",
+      "start_datetime": "2026-01-10T00:00:00",
+      "end_datetime": "2026-01-10T03:00:00",
+      "avg_interest": 70.58,
+      "max_interest": 70.63,
+      "confidence_score": 0.729
+    }
+  ],
+  "Food & Culinary": [
+    {
+      "category": "Food & Culinary",
+      "day_name": "Monday",
+      "date": "January 12, 2026",
+      "time_window": "21:00 - 00:00",
+      "start_datetime": "2026-01-12T21:00:00",
+      "end_datetime": "2026-01-13T00:00:00",
+      "avg_interest": 46.21,
+      "max_interest": 46.23,
+      "confidence_score": 0.65
+    },
+    {
+      "category": "Food & Culinary",
+      "day_name": "Wednesday",
+      "date": "January 07, 2026",
+      "time_window": "21:00 - 00:00",
+      "start_datetime": "2026-01-07T21:00:00",
+      "end_datetime": "2026-01-08T00:00:00",
+      "avg_interest": 46.17,
+      "max_interest": 46.18,
+      "confidence_score": 0.65
+    },
+    {
+      "category": "Food & Culinary",
+      "day_name": "Thursday",
+      "date": "January 08, 2026",
+      "time_window": "21:00 - 00:00",
+      "start_datetime": "2026-01-08T21:00:00",
+      "end_datetime": "2026-01-09T00:00:00",
+      "avg_interest": 46.16,
+      "max_interest": 46.18,
+      "confidence_score": 0.65
+    }
+  ],
+  "Gaming & Esports": [
+    {
+      "category": "Gaming & Esports",
+      "day_name": "Saturday",
+      "date": "January 10, 2026",
+      "time_window": "00:00 - 03:00",
+      "start_datetime": "2026-01-10T00:00:00",
+      "end_datetime": "2026-01-10T03:00:00",
+      "avg_interest": 0.43,
+      "max_interest": 0.44,
+      "confidence_score": 0.5
+    },
+    {
+      "category": "Gaming & Esports",
+      "day_name": "Saturday",
+      "date": "January 10, 2026",
+      "time_window": "12:00 - 15:00",
+      "start_datetime": "2026-01-10T12:00:00",
+      "end_datetime": "2026-01-10T15:00:00",
+      "avg_interest": 0.43,
+      "max_interest": 0.45,
+      "confidence_score": 0.5
+    },
+    {
+      "category": "Gaming & Esports",
+      "day_name": "Friday",
+      "date": "January 09, 2026",
+      "time_window": "00:00 - 03:00",
+      "start_datetime": "2026-01-09T00:00:00",
+      "end_datetime": "2026-01-09T03:00:00",
+      "avg_interest": 0.42,
+      "max_interest": 0.42,
+      "confidence_score": 0.5
+    }
+  ],
+  "Health & Fitness": [
+    {
+      "category": "Health & Fitness",
+      "day_name": "Monday",
+      "date": "January 12, 2026",
+      "time_window": "00:00 - 03:00",
+      "start_datetime": "2026-01-12T00:00:00",
+      "end_datetime": "2026-01-12T03:00:00",
+      "avg_interest": 59.77,
+      "max_interest": 59.82,
+      "confidence_score": 0.693
+    },
+    {
+      "category": "Health & Fitness",
+      "day_name": "Tuesday",
+      "date": "January 13, 2026",
+      "time_window": "00:00 - 03:00",
+      "start_datetime": "2026-01-13T00:00:00",
+      "end_datetime": "2026-01-13T03:00:00",
+      "avg_interest": 59.75,
+      "max_interest": 59.8,
+      "confidence_score": 0.693
+    },
+    {
+      "category": "Health & Fitness",
+      "day_name": "Wednesday",
+      "date": "January 07, 2026",
+      "time_window": "00:00 - 03:00",
+      "start_datetime": "2026-01-07T00:00:00",
+      "end_datetime": "2026-01-07T03:00:00",
+      "avg_interest": 59.74,
+      "max_interest": 59.79,
+      "confidence_score": 0.693
+    }
+  ],
+  "Technology & Gadgets": [
+    {
+      "category": "Technology & Gadgets",
+      "day_name": "Wednesday",
+      "date": "January 07, 2026",
+      "time_window": "00:00 - 03:00",
+      "start_datetime": "2026-01-07T00:00:00",
+      "end_datetime": "2026-01-07T03:00:00",
+      "avg_interest": 99.83,
+      "max_interest": 99.86,
+      "confidence_score": 0.826
+    },
+    {
+      "category": "Technology & Gadgets",
+      "day_name": "Tuesday",
+      "date": "January 13, 2026",
+      "time_window": "00:00 - 03:00",
+      "start_datetime": "2026-01-13T00:00:00",
+      "end_datetime": "2026-01-13T03:00:00",
+      "avg_interest": 99.83,
+      "max_interest": 99.87,
+      "confidence_score": 0.826
+    },
+    {
+      "category": "Technology & Gadgets",
+      "day_name": "Thursday",
+      "date": "January 08, 2026",
+      "time_window": "00:00 - 03:00",
+      "start_datetime": "2026-01-08T00:00:00",
+      "end_datetime": "2026-01-08T03:00:00",
+      "avg_interest": 99.82,
+      "max_interest": 99.86,
+      "confidence_score": 0.826
+    }
+  ],
+  "Travel & Tourism": [
+    {
+      "category": "Travel & Tourism",
+      "day_name": "Friday",
+      "date": "January 09, 2026",
+      "time_window": "06:00 - 09:00",
+      "start_datetime": "2026-01-09T06:00:00",
+      "end_datetime": "2026-01-09T09:00:00",
+      "avg_interest": 8.25,
+      "max_interest": 8.26,
+      "confidence_score": 0.524
+    },
+    {
+      "category": "Travel & Tourism",
+      "day_name": "Friday",
+      "date": "January 09, 2026",
+      "time_window": "10:00 - 13:00",
+      "start_datetime": "2026-01-09T10:00:00",
+      "end_datetime": "2026-01-09T13:00:00",
+      "avg_interest": 8.25,
+      "max_interest": 8.25,
+      "confidence_score": 0.524
+    },
+    {
+      "category": "Travel & Tourism",
+      "day_name": "Saturday",
+      "date": "January 10, 2026",
+      "time_window": "10:00 - 13:00",
+      "start_datetime": "2026-01-10T10:00:00",
+      "end_datetime": "2026-01-10T13:00:00",
+      "avg_interest": 8.24,
+      "max_interest": 8.24,
+      "confidence_score": 0.524
+    }
+  ]
+}

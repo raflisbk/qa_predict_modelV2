@@ -1,0 +1,64 @@
+# Docker-specific files
+.dockerignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Test files
+tests/
+*.test.py
+
+# Documentation (not needed in container)
+docs/
+*.md
+!README.md
+
+# Jupyter notebooks (not needed in production)
+notebooks/
+*.ipynb
+lightning_logs/
+
+# Data files (use volumes instead)
+data/raw/
+data/external/
+data/collection_state.json
+
+# Scripts (not needed in production)
+scripts/
+data_collection/
+
+# Git
+.git/
+.gitignore
+
+# Environment files (use docker-compose env instead)
+.env
+.env.local
+
+# Docker files
+docker-compose*.yml
+Dockerfile
+.dockerignore
