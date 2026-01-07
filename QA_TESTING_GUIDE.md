@@ -16,7 +16,45 @@ cd qa_predict_modelV2
 
 ---
 
-## 🏃 Step 2: Start Docker Services
+## 🔧 Step 2: Configure Environment (Optional)
+
+⚠️ **IMPORTANT**: Environment variables harus di-set **SEBELUM** menjalankan `docker-compose up -d`!
+
+**Default values (.env.docker sudah ada):**
+```env
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+POSTGRES_DB=best_time_post
+```
+
+**Jika perlu custom configuration:**
+```bash
+# 1. Copy template
+cp .env.docker .env
+
+# 2. Edit values (SEBELUM docker-compose!)
+notepad .env  # Windows
+vim .env      # Linux/Mac
+
+# 3. Verify changes
+cat .env | grep POSTGRES
+```
+
+**⚠️ Jika sudah running dan mau ganti .env:**
+```bash
+# Edit file
+vim .env
+
+# Recreate containers untuk load .env baru
+docker-compose down
+docker-compose up -d --force-recreate
+```
+
+---
+
+## 🏃 Step 3: Start Docker Services
 
 ⚠️ **IMPORTANT**: Jika sebelumnya pernah run Docker, hapus volume lama dulu:
 ```bash
@@ -46,7 +84,7 @@ docker-compose up -d
 
 ---
 
-## ✅ Step 3: Verify Services Running
+## ✅ Step 4: Verify Services Running
 
 ### 3.1 Check Container Status
 ```bash
@@ -100,7 +138,7 @@ INFO: Uvicorn running on http://0.0.0.0:8000
 
 ---
 
-## 🧪 Step 4: API Testing
+## 🧪 Step 5: API Testing
 
 ### 4.1 Health Check
 ```bash
@@ -263,7 +301,7 @@ done
 
 ---
 
-## 🗄️ Step 5: Database Verification
+## 🗄️ Step 6: Database Verification
 
 ### 5.1 Connect to Database
 ```bash
@@ -303,7 +341,7 @@ LIMIT 5;
 
 ---
 
-## 📊 Step 6: Swagger UI Testing
+## 📊 Step 7: Swagger UI Testing
 
 ### 6.1 Open Browser
 ```
@@ -330,7 +368,7 @@ http://localhost:8000/docs
 
 ---
 
-## 🔍 Step 7: Error Handling Tests
+## 🔍 Step 8: Error Handling Tests
 
 ### 7.1 Invalid Category
 ```bash
@@ -377,7 +415,7 @@ curl -X POST http://localhost:8000/api/v1/best-time/predict \
 
 ---
 
-## 📈 Step 8: Performance Testing
+## 📈 Step 9: Performance Testing
 
 ### 8.1 Response Times
 ```bash
@@ -410,7 +448,7 @@ time curl -X POST http://localhost:8000/api/v1/best-time/predict \
 
 ---
 
-## 🛑 Step 9: Cleanup & Stop
+## 🛑 Step 10: Cleanup & Stop
 
 ### 9.1 Stop Services
 ```bash
