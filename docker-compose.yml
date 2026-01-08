@@ -7,7 +7,7 @@ services:
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
-      POSTGRES_DB: ${POSTGRES_DB:-best_time_post}
+      POSTGRES_DB: ${POSTGRES_DB:-ai_digimar}
       PGDATA: /var/lib/postgresql/data/pgdata
     ports:
       - "5433:5432"
@@ -15,7 +15,7 @@ services:
       - postgres_data:/var/lib/postgresql/data
       - ./database:/docker-entrypoint-initdb.d:ro
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-best_time_post}"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-ai_digimar}"]
       interval: 10s
       timeout: 5s
       retries: 10
@@ -39,7 +39,7 @@ services:
       POSTGRES_PORT: 5432
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
-      POSTGRES_DB: ${POSTGRES_DB:-best_time_post}
+      POSTGRES_DB: ${POSTGRES_DB:-ai_digimar}
       # API
       API_HOST: 0.0.0.0
       API_PORT: 8000
