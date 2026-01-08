@@ -1,0 +1,375 @@
+{
+  "info": {
+    "name": "Best Time Post API",
+    "description": "API untuk prediksi waktu terbaik posting konten berdasarkan kategori dan tren historis",
+    "version": "1.0.0",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "item": [
+        {
+          "name": "Health Check - Detailed",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/v1/best-time/health",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "best-time", "health"]
+            },
+            "description": "Mengecek status kesehatan API, koneksi database, dan model yang dimuat"
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status code is 200', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test('Response has correct structure', function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData).to.have.property('status');",
+                  "    pm.expect(jsonData).to.have.property('model_loaded');",
+                  "    pm.expect(jsonData).to.have.property('database_connected');",
+                  "});",
+                  "",
+                  "pm.test('Service is healthy', function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.status).to.eql('healthy');",
+                  "    pm.expect(jsonData.model_loaded).to.be.true;",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        }
+      ],
+      "description": "Endpoint untuk mengecek status kesehatan API"
+    },
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "List Available Categories",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/v1/best-time/categories",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "best-time", "categories"]
+            },
+            "description": "Mendapatkan daftar semua kategori yang tersedia untuk prediksi"
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status code is 200', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test('Response contains categories array', function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData).to.have.property('categories');",
+                  "    pm.expect(jsonData.categories).to.be.an('array');",
+                  "});",
+                  "",
+                  "pm.test('Categories array is not empty', function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.categories.length).to.be.above(0);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        }
+      ],
+      "description": "Endpoint untuk mendapatkan informasi kategori"
+    },
+    {
+      "name": "Predictions",
+      "item": [
+        {
+          "name": "Predict Best Time - Food & Culinary",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"category\": \"Food & Culinary\",\n  \"window_hours\": 3,\n  \"top_k\": 3,\n  \"days_ahead\": 7\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/best-time/predict",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "best-time", "predict"]
+            },
+            "description": "Prediksi waktu terbaik untuk posting konten kategori Food & Culinary"
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status code is 200', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test('Response has correct structure', function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData).to.have.property('status');",
+                  "    pm.expect(jsonData).to.have.property('category');",
+                  "    pm.expect(jsonData).to.have.property('recommendations');",
+                  "    pm.expect(jsonData).to.have.property('prediction_window');",
+                  "});",
+                  "",
+                  "pm.test('Recommendations array has correct length', function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.recommendations).to.be.an('array');",
+                  "    pm.expect(jsonData.recommendations.length).to.eql(3);",
+                  "});",
+                  "",
+                  "pm.test('Each recommendation has required fields', function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    jsonData.recommendations.forEach(function(rec) {",
+                  "        pm.expect(rec).to.have.property('rank');",
+                  "        pm.expect(rec).to.have.property('day_name');",
+                  "        pm.expect(rec).to.have.property('date');",
+                  "        pm.expect(rec).to.have.property('time_window');",
+                  "        pm.expect(rec).to.have.property('confidence_score');",
+                  "    });",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Predict Best Time - E-commerce & Shopping",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"category\": \"E-commerce & Shopping\",\n  \"window_hours\": 3,\n  \"top_k\": 5,\n  \"days_ahead\": 7\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/best-time/predict",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "best-time", "predict"]
+            },
+            "description": "Prediksi waktu terbaik untuk posting konten kategori E-commerce & Shopping dengan 5 rekomendasi"
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status code is 200', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test('Returns 5 recommendations', function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.recommendations.length).to.eql(5);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Predict Best Time - Technology & Gadgets",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"category\": \"Technology & Gadgets\",\n  \"window_hours\": 2,\n  \"top_k\": 3,\n  \"days_ahead\": 14\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/best-time/predict",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "best-time", "predict"]
+            },
+            "description": "Prediksi 14 hari ke depan dengan window 2 jam untuk kategori Technology & Gadgets"
+          },
+          "response": []
+        },
+        {
+          "name": "Predict Best Time - Fashion & Beauty",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"category\": \"Fashion & Beauty\",\n  \"window_hours\": 4,\n  \"top_k\": 3,\n  \"days_ahead\": 7\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/best-time/predict",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "best-time", "predict"]
+            },
+            "description": "Prediksi dengan window 4 jam untuk kategori Fashion & Beauty"
+          },
+          "response": []
+        }
+      ],
+      "description": "Endpoint untuk prediksi waktu terbaik posting berdasarkan kategori"
+    },
+    {
+      "name": "Error Scenarios",
+      "item": [
+        {
+          "name": "Invalid Category",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"category\": \"Invalid Category Name\",\n  \"window_hours\": 3,\n  \"top_k\": 3,\n  \"days_ahead\": 7\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/best-time/predict",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "best-time", "predict"]
+            },
+            "description": "Test error handling untuk kategori yang tidak valid"
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status code is 400 or 422', function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([400, 422]);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Invalid Window Hours",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"category\": \"Food & Culinary\",\n  \"window_hours\": 15,\n  \"top_k\": 3,\n  \"days_ahead\": 7\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/best-time/predict",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "best-time", "predict"]
+            },
+            "description": "Test validasi untuk window_hours di luar range (max: 12)"
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status code is 422', function () {",
+                  "    pm.response.to.have.status(422);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Missing Required Field",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"window_hours\": 3,\n  \"top_k\": 3\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/best-time/predict",
+              "host": ["{{base_url}}"],
+              "path": ["api", "v1", "best-time", "predict"]
+            },
+            "description": "Test error handling ketika field category tidak disertakan"
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status code is 422', function () {",
+                  "    pm.response.to.have.status(422);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        }
+      ],
+      "description": "Test cases untuk validasi error handling"
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000",
+      "type": "string"
+    }
+  ]
+}
