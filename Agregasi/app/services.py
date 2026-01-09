@@ -173,19 +173,37 @@ def fetch_from_apify(keyword: str) -> Tuple[List[Dict[str, Any]], Dict[str, Any]
             "searchTerms": [keyword],
             "timeRange": "now 7-d",
             "geo": "ID",
-            "memory_mbytes": 4096
-        }
+            # Optimizations that DON'T sacrifice data quality
+            "isPublic": False,  # Private dataset (no impact on data quality)
+            # Note: isMultiTimelineSourcesRequired removed - let Apify decide
+            # Note: maxItems removed - need all data for accurate aggregation
+        },
+        # Runtime config - optimized for viral keywords
+        memory_mbytes=4096,  # High memory for large datasets (viral keywords)
+        timeout_secs=600,  # 10 minutes - handle slow fetches for popular keywords
     )
     
     # Extract dataset items
     dataset_items = list(apify_client.dataset(run["defaultDatasetId"]).iterate_items())
     
-    # Extract timeline data
+    # Extract timeline data (Apify uses 'interestOverTime_timelineData' key)
     timeline_data = []
     if dataset_items:
         for item in dataset_items:
-            if "timelineData" in item and item["timelineData"]:
-                timeline_data.extend(item["timelineData"])
+            if "interestOverTime_timelineData" in item and item["interestOverTime_timelineData"]:
+                # Apify returns data with structure: {"time": "unix_timestamp", "value": [int], ...}
+                # Use Unix timestamp (always UTC) for accurate timezone conversion later
+                for data_point in item["interestOverTime_timelineData"]:
+                    # Convert Unix timestamp to ISO format datetime string
+                    timestamp = int(data_point.get("time", 0))
+                    if timestamp > 0:
+                        # Convert to datetime (UTC)
+                        from datetime import datetime
+                        dt = datetime.utcfromtimestamp(timestamp)
+                        timeline_data.append({
+                            "date": dt.isoformat(),  # Will be converted to Jakarta timezone later
+                            "value": data_point.get("value", [0])[0]  # Extract first value from array
+                        })
     
     # Validate data
     if not timeline_data:

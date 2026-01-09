@@ -1,5 +1,5 @@
 import pytest
-from unittest.mock import patch, Mock
+from unittest.mock import patch, Mock, MagicMock
 import json
 
 
@@ -63,10 +63,19 @@ class TestPredictEndpoint:
     
     def test_predict_with_cached_data(self, client, mock_redis, mock_cached_data):
         """Test prediction returns cached data when available."""
-        # Setup Redis to return cached data
-        mock_redis.get.return_value = json.dumps(mock_cached_data)
+        # Setup comprehensive mocks for all Redis operations
+        def redis_get_side_effect(key):
+            if key.startswith("usage:global:"):
+                return "0"  # Usage count
+            elif key.startswith("trends:"):
+                return json.dumps(mock_cached_data)  # Cached data
+            return None
         
-        with patch('app.services.redis_get_with_retry', return_value=json.dumps(mock_cached_data)):
+        # Mock ALL services to prevent ANY external calls
+        with patch('app.services.redis_get_with_retry', side_effect=redis_get_side_effect), \
+             patch('app.services.redis_incr_with_retry', return_value=1), \
+             patch('app.services.redis_expire_with_retry', return_value=True):
+            
             response = client.get("/predict?keyword=fashion")
         
         assert response.status_code == 200
@@ -145,10 +154,11 @@ class TestCORS:
     
     def test_cors_headers_present(self, client):
         """Test that CORS headers are present."""
-        response = client.options("/health")
+        response = client.get("/health", headers={"Origin": "http://example.com"})
         
         # CORS should allow all origins
         assert "access-control-allow-origin" in [h.lower() for h in response.headers.keys()]
+        assert response.headers["access-control-allow-origin"] == "*"
 
 
 class TestErrorHandling:
