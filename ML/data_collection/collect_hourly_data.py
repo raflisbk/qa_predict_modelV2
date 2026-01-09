@@ -17,10 +17,16 @@ from loguru import logger
 from apify_client import ApifyClient
 from sqlalchemy import text
 
+# Load .env.local FIRST before importing db_manager
+if os.path.exists('.env.local'):
+    load_dotenv('.env.local', override=True)
+    logger.info("Using .env.local for database connection")
+else:
+    load_dotenv()
+    logger.info("Using .env for database connection")
+
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 from src.database.db_manager import SessionLocal, test_connection
-
-load_dotenv()
 
 
 def fetch_from_apify(keyword, api_token):
