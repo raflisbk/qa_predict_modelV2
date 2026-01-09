@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+gunicorn
+redis
+apify-client
+pandas
+tenacity
+pydantic-settings
+python-dotenv
+pytz
+httpx
