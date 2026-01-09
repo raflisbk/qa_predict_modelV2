@@ -13,7 +13,11 @@ from loguru import logger
 class CollectionStateTracker:
     """Track collection progress and enable resume"""
     
-    def __init__(self, state_file: str = "data/collection_state.json"):
+    def __init__(self, state_file: str = None):
+        # Use absolute path relative to project root (ML folder)
+        if state_file is None:
+            project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
+            state_file = os.path.join(project_root, "data/collection_state.json")
         self.state_file = state_file
         self.state = self._load_state()
     

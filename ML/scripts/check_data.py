@@ -1,5 +1,9 @@
 import sys
-sys.path.insert(0, r'd:\Subek\project\Draft\UKI\DIGIMAR\Best time post v2')
+import os
+
+# Add project root (ML folder) to path
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.insert(0, project_root)
 
 from src.database.db_manager import SessionLocal, text
 import pandas as pd

@@ -10,14 +10,23 @@ from loguru import logger
 from apify_client import ApifyClient
 from sqlalchemy import text
 
-if os.path.exists('.env.local'):
-    load_dotenv('.env.local', override=True)
-    logger.info("Using .env.local for database connection")
-else:
-    load_dotenv()
-    logger.info("Using .env for database connection")
+# Load .env.local FIRST before importing db_manager
+# Look for .env.local in project root (ML folder)
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+env_local_path = os.path.join(project_root, '.env.local')
+env_path = os.path.join(project_root, '.env')
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+if os.path.exists(env_local_path):
+    load_dotenv(env_local_path, override=True)
+    logger.info(f"Using .env.local for database connection: {env_local_path}")
+elif os.path.exists(env_path):
+    load_dotenv(env_path)
+    logger.info(f"Using .env for database connection: {env_path}")
+else:
+    load_dotenv()  # Fallback to default .env search
+    logger.warning("No .env or .env.local found, using environment variables")
+
+sys.path.insert(0, project_root)
 from src.database.db_manager import SessionLocal, test_connection
 from src.utils.state_tracker import CollectionStateTracker
 
