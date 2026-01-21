@@ -1,0 +1,501 @@
+student_input,prompt_for_gemini
+"Day: Monday, Time: 12:00 - 13:00, Score: 76, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Advisory (Consultative, Helpful)","Data Context:
+- Day: Monday
+- Time: 12:00 - 13:00 (Lunch Break)
+- Score: 76/100 (Runner-up: 50)
+- Pattern: Unrivaled dominance with Sustained Plateau behavior
+- User Behavior: high engagement during midday rest
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Advisory (Consultative, Helpful)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Thursday, Time: 22:00 - 00:00, Score: 97, Dominance: Tight Race, Shape: Sustained Plateau, Style: Strategic (Focus on ROI & Growth)","Data Context:
+- Day: Thursday
+- Time: 22:00 - 00:00 (Late Night)
+- Score: 97/100 (Runner-up: 88)
+- Pattern: Tight Race dominance with Sustained Plateau behavior
+- User Behavior: night owls scrolling before sleep
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Strategic (Focus on ROI & Growth)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Saturday, Time: 19:00 - 22:00, Score: 78, Dominance: Unrivaled, Shape: Sharp Spike, Style: Storytelling (Narrative flow)","Data Context:
+- Day: Saturday
+- Time: 19:00 - 22:00 (Prime Time)
+- Score: 78/100 (Runner-up: 49)
+- Pattern: Unrivaled dominance with Sharp Spike behavior
+- User Behavior: peak leisure time after dinner
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Storytelling (Narrative flow)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Tuesday, Time: 22:00 - 00:00, Score: 73, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Strategic (Focus on ROI & Growth)","Data Context:
+- Day: Tuesday
+- Time: 22:00 - 00:00 (Late Night)
+- Score: 73/100 (Runner-up: 40)
+- Pattern: Unrivaled dominance with Sustained Plateau behavior
+- User Behavior: night owls scrolling before sleep
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Strategic (Focus on ROI & Growth)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Thursday, Time: 22:00 - 00:00, Score: 71, Dominance: Unrivaled, Shape: Sharp Spike, Style: Detailed (Deep dive analysis)","Data Context:
+- Day: Thursday
+- Time: 22:00 - 00:00 (Late Night)
+- Score: 71/100 (Runner-up: 47)
+- Pattern: Unrivaled dominance with Sharp Spike behavior
+- User Behavior: night owls scrolling before sleep
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Detailed (Deep dive analysis)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Thursday, Time: 17:00 - 19:00, Score: 86, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Storytelling (Narrative flow)","Data Context:
+- Day: Thursday
+- Time: 17:00 - 19:00 (Commute Hours)
+- Score: 86/100 (Runner-up: 75)
+- Pattern: Clear Lead dominance with Sustained Plateau behavior
+- User Behavior: audiences active during transit
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Storytelling (Narrative flow)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Sunday, Time: 09:00 - 12:00, Score: 71, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Urgent (Creating FOMO/Action)","Data Context:
+- Day: Sunday
+- Time: 09:00 - 12:00 (Mid-Morning)
+- Score: 71/100 (Runner-up: 54)
+- Pattern: Clear Lead dominance with Sustained Plateau behavior
+- User Behavior: professionals active during work breaks
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Urgent (Creating FOMO/Action)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Saturday, Time: 12:00 - 13:00, Score: 86, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Enthusiastic (High energy, Marketing tone)","Data Context:
+- Day: Saturday
+- Time: 12:00 - 13:00 (Lunch Break)
+- Score: 86/100 (Runner-up: 74)
+- Pattern: Clear Lead dominance with Sustained Plateau behavior
+- User Behavior: high engagement during midday rest
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Enthusiastic (High energy, Marketing tone)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Friday, Time: 06:00 - 09:00, Score: 87, Dominance: Unrivaled, Shape: Sharp Spike, Style: Storytelling (Narrative flow)","Data Context:
+- Day: Friday
+- Time: 06:00 - 09:00 (Morning Rush)
+- Score: 87/100 (Runner-up: 42)
+- Pattern: Unrivaled dominance with Sharp Spike behavior
+- User Behavior: users checking phones before work
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Storytelling (Narrative flow)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Tuesday, Time: 17:00 - 19:00, Score: 93, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Enthusiastic (High energy, Marketing tone)","Data Context:
+- Day: Tuesday
+- Time: 17:00 - 19:00 (Commute Hours)
+- Score: 93/100 (Runner-up: 45)
+- Pattern: Unrivaled dominance with Sustained Plateau behavior
+- User Behavior: audiences active during transit
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Enthusiastic (High energy, Marketing tone)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Friday, Time: 06:00 - 09:00, Score: 86, Dominance: Tight Race, Shape: Sharp Spike, Style: Detailed (Deep dive analysis)","Data Context:
+- Day: Friday
+- Time: 06:00 - 09:00 (Morning Rush)
+- Score: 86/100 (Runner-up: 76)
+- Pattern: Tight Race dominance with Sharp Spike behavior
+- User Behavior: users checking phones before work
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Detailed (Deep dive analysis)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Monday, Time: 19:00 - 22:00, Score: 77, Dominance: Tight Race, Shape: Sustained Plateau, Style: Urgent (Creating FOMO/Action)","Data Context:
+- Day: Monday
+- Time: 19:00 - 22:00 (Prime Time)
+- Score: 77/100 (Runner-up: 69)
+- Pattern: Tight Race dominance with Sustained Plateau behavior
+- User Behavior: peak leisure time after dinner
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Urgent (Creating FOMO/Action)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Monday, Time: 09:00 - 12:00, Score: 98, Dominance: Clear Lead, Shape: Sharp Spike, Style: Advisory (Consultative, Helpful)","Data Context:
+- Day: Monday
+- Time: 09:00 - 12:00 (Mid-Morning)
+- Score: 98/100 (Runner-up: 85)
+- Pattern: Clear Lead dominance with Sharp Spike behavior
+- User Behavior: professionals active during work breaks
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Advisory (Consultative, Helpful)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Wednesday, Time: 09:00 - 12:00, Score: 80, Dominance: Unrivaled, Shape: Sharp Spike, Style: Persuasive (Convincing)","Data Context:
+- Day: Wednesday
+- Time: 09:00 - 12:00 (Mid-Morning)
+- Score: 80/100 (Runner-up: 51)
+- Pattern: Unrivaled dominance with Sharp Spike behavior
+- User Behavior: professionals active during work breaks
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Persuasive (Convincing)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Sunday, Time: 09:00 - 12:00, Score: 92, Dominance: Tight Race, Shape: Sharp Spike, Style: Urgent (Creating FOMO/Action)","Data Context:
+- Day: Sunday
+- Time: 09:00 - 12:00 (Mid-Morning)
+- Score: 92/100 (Runner-up: 92)
+- Pattern: Tight Race dominance with Sharp Spike behavior
+- User Behavior: professionals active during work breaks
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Urgent (Creating FOMO/Action)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Friday, Time: 00:00 - 06:00, Score: 81, Dominance: Unrivaled, Shape: Sharp Spike, Style: Persuasive (Convincing)","Data Context:
+- Day: Friday
+- Time: 00:00 - 06:00 (Overnight)
+- Score: 81/100 (Runner-up: 48)
+- Pattern: Unrivaled dominance with Sharp Spike behavior
+- User Behavior: minimal but dedicated late-night audience
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Persuasive (Convincing)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Tuesday, Time: 22:00 - 00:00, Score: 79, Dominance: Tight Race, Shape: Sustained Plateau, Style: Persuasive (Convincing)","Data Context:
+- Day: Tuesday
+- Time: 22:00 - 00:00 (Late Night)
+- Score: 79/100 (Runner-up: 71)
+- Pattern: Tight Race dominance with Sustained Plateau behavior
+- User Behavior: night owls scrolling before sleep
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Persuasive (Convincing)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Monday, Time: 09:00 - 12:00, Score: 71, Dominance: Clear Lead, Shape: Sharp Spike, Style: Enthusiastic (High energy, Marketing tone)","Data Context:
+- Day: Monday
+- Time: 09:00 - 12:00 (Mid-Morning)
+- Score: 71/100 (Runner-up: 56)
+- Pattern: Clear Lead dominance with Sharp Spike behavior
+- User Behavior: professionals active during work breaks
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Enthusiastic (High energy, Marketing tone)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Saturday, Time: 00:00 - 06:00, Score: 85, Dominance: Unrivaled, Shape: Sharp Spike, Style: Advisory (Consultative, Helpful)","Data Context:
+- Day: Saturday
+- Time: 00:00 - 06:00 (Overnight)
+- Score: 85/100 (Runner-up: 43)
+- Pattern: Unrivaled dominance with Sharp Spike behavior
+- User Behavior: minimal but dedicated late-night audience
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Advisory (Consultative, Helpful)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Monday, Time: 19:00 - 22:00, Score: 92, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Enthusiastic (High energy, Marketing tone)","Data Context:
+- Day: Monday
+- Time: 19:00 - 22:00 (Prime Time)
+- Score: 92/100 (Runner-up: 75)
+- Pattern: Clear Lead dominance with Sustained Plateau behavior
+- User Behavior: peak leisure time after dinner
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Enthusiastic (High energy, Marketing tone)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Monday, Time: 22:00 - 00:00, Score: 95, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Executive (Brief, Direct, Decision-oriented)","Data Context:
+- Day: Monday
+- Time: 22:00 - 00:00 (Late Night)
+- Score: 95/100 (Runner-up: 64)
+- Pattern: Unrivaled dominance with Sustained Plateau behavior
+- User Behavior: night owls scrolling before sleep
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Executive (Brief, Direct, Decision-oriented)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Tuesday, Time: 00:00 - 06:00, Score: 72, Dominance: Clear Lead, Shape: Sharp Spike, Style: Analytic (Focus on numbers & trends)","Data Context:
+- Day: Tuesday
+- Time: 00:00 - 06:00 (Overnight)
+- Score: 72/100 (Runner-up: 55)
+- Pattern: Clear Lead dominance with Sharp Spike behavior
+- User Behavior: minimal but dedicated late-night audience
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Analytic (Focus on numbers & trends)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Tuesday, Time: 22:00 - 00:00, Score: 98, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Urgent (Creating FOMO/Action)","Data Context:
+- Day: Tuesday
+- Time: 22:00 - 00:00 (Late Night)
+- Score: 98/100 (Runner-up: 40)
+- Pattern: Unrivaled dominance with Sustained Plateau behavior
+- User Behavior: night owls scrolling before sleep
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Urgent (Creating FOMO/Action)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Tuesday, Time: 17:00 - 19:00, Score: 93, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Advisory (Consultative, Helpful)","Data Context:
+- Day: Tuesday
+- Time: 17:00 - 19:00 (Commute Hours)
+- Score: 93/100 (Runner-up: 77)
+- Pattern: Clear Lead dominance with Sustained Plateau behavior
+- User Behavior: audiences active during transit
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Advisory (Consultative, Helpful)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Friday, Time: 09:00 - 12:00, Score: 86, Dominance: Clear Lead, Shape: Sharp Spike, Style: Relaxed (Casual professional)","Data Context:
+- Day: Friday
+- Time: 09:00 - 12:00 (Mid-Morning)
+- Score: 86/100 (Runner-up: 69)
+- Pattern: Clear Lead dominance with Sharp Spike behavior
+- User Behavior: professionals active during work breaks
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Relaxed (Casual professional)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Thursday, Time: 22:00 - 00:00, Score: 76, Dominance: Tight Race, Shape: Sustained Plateau, Style: Analytic (Focus on numbers & trends)","Data Context:
+- Day: Thursday
+- Time: 22:00 - 00:00 (Late Night)
+- Score: 76/100 (Runner-up: 73)
+- Pattern: Tight Race dominance with Sustained Plateau behavior
+- User Behavior: night owls scrolling before sleep
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Analytic (Focus on numbers & trends)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Friday, Time: 09:00 - 12:00, Score: 76, Dominance: Tight Race, Shape: Sharp Spike, Style: Analytic (Focus on numbers & trends)","Data Context:
+- Day: Friday
+- Time: 09:00 - 12:00 (Mid-Morning)
+- Score: 76/100 (Runner-up: 69)
+- Pattern: Tight Race dominance with Sharp Spike behavior
+- User Behavior: professionals active during work breaks
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Analytic (Focus on numbers & trends)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Wednesday, Time: 00:00 - 06:00, Score: 72, Dominance: Tight Race, Shape: Sustained Plateau, Style: Storytelling (Narrative flow)","Data Context:
+- Day: Wednesday
+- Time: 00:00 - 06:00 (Overnight)
+- Score: 72/100 (Runner-up: 63)
+- Pattern: Tight Race dominance with Sustained Plateau behavior
+- User Behavior: minimal but dedicated late-night audience
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Storytelling (Narrative flow)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Thursday, Time: 17:00 - 19:00, Score: 85, Dominance: Tight Race, Shape: Sharp Spike, Style: Strategic (Focus on ROI & Growth)","Data Context:
+- Day: Thursday
+- Time: 17:00 - 19:00 (Commute Hours)
+- Score: 85/100 (Runner-up: 80)
+- Pattern: Tight Race dominance with Sharp Spike behavior
+- User Behavior: audiences active during transit
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Strategic (Focus on ROI & Growth)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Monday, Time: 00:00 - 06:00, Score: 79, Dominance: Tight Race, Shape: Sharp Spike, Style: Persuasive (Convincing)","Data Context:
+- Day: Monday
+- Time: 00:00 - 06:00 (Overnight)
+- Score: 79/100 (Runner-up: 73)
+- Pattern: Tight Race dominance with Sharp Spike behavior
+- User Behavior: minimal but dedicated late-night audience
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Persuasive (Convincing)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Monday, Time: 13:00 - 17:00, Score: 83, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Enthusiastic (High energy, Marketing tone)","Data Context:
+- Day: Monday
+- Time: 13:00 - 17:00 (Afternoon Lull)
+- Score: 83/100 (Runner-up: 58)
+- Pattern: Unrivaled dominance with Sustained Plateau behavior
+- User Behavior: moderate activity during work hours
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Enthusiastic (High energy, Marketing tone)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Tuesday, Time: 22:00 - 00:00, Score: 84, Dominance: Unrivaled, Shape: Sharp Spike, Style: Analytic (Focus on numbers & trends)","Data Context:
+- Day: Tuesday
+- Time: 22:00 - 00:00 (Late Night)
+- Score: 84/100 (Runner-up: 61)
+- Pattern: Unrivaled dominance with Sharp Spike behavior
+- User Behavior: night owls scrolling before sleep
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Analytic (Focus on numbers & trends)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Monday, Time: 00:00 - 06:00, Score: 88, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Detailed (Deep dive analysis)","Data Context:
+- Day: Monday
+- Time: 00:00 - 06:00 (Overnight)
+- Score: 88/100 (Runner-up: 55)
+- Pattern: Unrivaled dominance with Sustained Plateau behavior
+- User Behavior: minimal but dedicated late-night audience
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Detailed (Deep dive analysis)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Thursday, Time: 17:00 - 19:00, Score: 83, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Strategic (Focus on ROI & Growth)","Data Context:
+- Day: Thursday
+- Time: 17:00 - 19:00 (Commute Hours)
+- Score: 83/100 (Runner-up: 53)
+- Pattern: Unrivaled dominance with Sustained Plateau behavior
+- User Behavior: audiences active during transit
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Strategic (Focus on ROI & Growth)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Thursday, Time: 12:00 - 13:00, Score: 98, Dominance: Tight Race, Shape: Sustained Plateau, Style: Analytic (Focus on numbers & trends)","Data Context:
+- Day: Thursday
+- Time: 12:00 - 13:00 (Lunch Break)
+- Score: 98/100 (Runner-up: 92)
+- Pattern: Tight Race dominance with Sustained Plateau behavior
+- User Behavior: high engagement during midday rest
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Analytic (Focus on numbers & trends)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Wednesday, Time: 06:00 - 09:00, Score: 70, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Urgent (Creating FOMO/Action)","Data Context:
+- Day: Wednesday
+- Time: 06:00 - 09:00 (Morning Rush)
+- Score: 70/100 (Runner-up: 55)
+- Pattern: Clear Lead dominance with Sustained Plateau behavior
+- User Behavior: users checking phones before work
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Urgent (Creating FOMO/Action)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Monday, Time: 22:00 - 00:00, Score: 82, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Executive (Brief, Direct, Decision-oriented)","Data Context:
+- Day: Monday
+- Time: 22:00 - 00:00 (Late Night)
+- Score: 82/100 (Runner-up: 57)
+- Pattern: Unrivaled dominance with Sustained Plateau behavior
+- User Behavior: night owls scrolling before sleep
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Executive (Brief, Direct, Decision-oriented)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Wednesday, Time: 13:00 - 17:00, Score: 96, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Detailed (Deep dive analysis)","Data Context:
+- Day: Wednesday
+- Time: 13:00 - 17:00 (Afternoon Lull)
+- Score: 96/100 (Runner-up: 40)
+- Pattern: Unrivaled dominance with Sustained Plateau behavior
+- User Behavior: moderate activity during work hours
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Detailed (Deep dive analysis)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Friday, Time: 13:00 - 17:00, Score: 87, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Advisory (Consultative, Helpful)","Data Context:
+- Day: Friday
+- Time: 13:00 - 17:00 (Afternoon Lull)
+- Score: 87/100 (Runner-up: 64)
+- Pattern: Unrivaled dominance with Sustained Plateau behavior
+- User Behavior: moderate activity during work hours
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Advisory (Consultative, Helpful)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Monday, Time: 09:00 - 12:00, Score: 72, Dominance: Tight Race, Shape: Sharp Spike, Style: Relaxed (Casual professional)","Data Context:
+- Day: Monday
+- Time: 09:00 - 12:00 (Mid-Morning)
+- Score: 72/100 (Runner-up: 63)
+- Pattern: Tight Race dominance with Sharp Spike behavior
+- User Behavior: professionals active during work breaks
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Relaxed (Casual professional)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Monday, Time: 12:00 - 13:00, Score: 74, Dominance: Tight Race, Shape: Sustained Plateau, Style: Strategic (Focus on ROI & Growth)","Data Context:
+- Day: Monday
+- Time: 12:00 - 13:00 (Lunch Break)
+- Score: 74/100 (Runner-up: 68)
+- Pattern: Tight Race dominance with Sustained Plateau behavior
+- User Behavior: high engagement during midday rest
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Strategic (Focus on ROI & Growth)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Friday, Time: 06:00 - 09:00, Score: 94, Dominance: Tight Race, Shape: Sustained Plateau, Style: Analytic (Focus on numbers & trends)","Data Context:
+- Day: Friday
+- Time: 06:00 - 09:00 (Morning Rush)
+- Score: 94/100 (Runner-up: 92)
+- Pattern: Tight Race dominance with Sustained Plateau behavior
+- User Behavior: users checking phones before work
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Analytic (Focus on numbers & trends)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Monday, Time: 13:00 - 17:00, Score: 76, Dominance: Unrivaled, Shape: Sharp Spike, Style: Enthusiastic (High energy, Marketing tone)","Data Context:
+- Day: Monday
+- Time: 13:00 - 17:00 (Afternoon Lull)
+- Score: 76/100 (Runner-up: 49)
+- Pattern: Unrivaled dominance with Sharp Spike behavior
+- User Behavior: moderate activity during work hours
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Enthusiastic (High energy, Marketing tone)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Sunday, Time: 22:00 - 00:00, Score: 73, Dominance: Tight Race, Shape: Sharp Spike, Style: Executive (Brief, Direct, Decision-oriented)","Data Context:
+- Day: Sunday
+- Time: 22:00 - 00:00 (Late Night)
+- Score: 73/100 (Runner-up: 71)
+- Pattern: Tight Race dominance with Sharp Spike behavior
+- User Behavior: night owls scrolling before sleep
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Executive (Brief, Direct, Decision-oriented)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Wednesday, Time: 13:00 - 17:00, Score: 85, Dominance: Tight Race, Shape: Sustained Plateau, Style: Executive (Brief, Direct, Decision-oriented)","Data Context:
+- Day: Wednesday
+- Time: 13:00 - 17:00 (Afternoon Lull)
+- Score: 85/100 (Runner-up: 75)
+- Pattern: Tight Race dominance with Sustained Plateau behavior
+- User Behavior: moderate activity during work hours
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Executive (Brief, Direct, Decision-oriented)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Monday, Time: 22:00 - 00:00, Score: 93, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Relaxed (Casual professional)","Data Context:
+- Day: Monday
+- Time: 22:00 - 00:00 (Late Night)
+- Score: 93/100 (Runner-up: 46)
+- Pattern: Unrivaled dominance with Sustained Plateau behavior
+- User Behavior: night owls scrolling before sleep
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Relaxed (Casual professional)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Wednesday, Time: 12:00 - 13:00, Score: 80, Dominance: Tight Race, Shape: Sharp Spike, Style: Executive (Brief, Direct, Decision-oriented)","Data Context:
+- Day: Wednesday
+- Time: 12:00 - 13:00 (Lunch Break)
+- Score: 80/100 (Runner-up: 76)
+- Pattern: Tight Race dominance with Sharp Spike behavior
+- User Behavior: high engagement during midday rest
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Executive (Brief, Direct, Decision-oriented)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Tuesday, Time: 19:00 - 22:00, Score: 83, Dominance: Unrivaled, Shape: Sharp Spike, Style: Detailed (Deep dive analysis)","Data Context:
+- Day: Tuesday
+- Time: 19:00 - 22:00 (Prime Time)
+- Score: 83/100 (Runner-up: 43)
+- Pattern: Unrivaled dominance with Sharp Spike behavior
+- User Behavior: peak leisure time after dinner
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Detailed (Deep dive analysis)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Thursday, Time: 19:00 - 22:00, Score: 83, Dominance: Unrivaled, Shape: Sharp Spike, Style: Executive (Brief, Direct, Decision-oriented)","Data Context:
+- Day: Thursday
+- Time: 19:00 - 22:00 (Prime Time)
+- Score: 83/100 (Runner-up: 53)
+- Pattern: Unrivaled dominance with Sharp Spike behavior
+- User Behavior: peak leisure time after dinner
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Executive (Brief, Direct, Decision-oriented)
+Keep it under 40 words and be specific about the data patterns."
+"Day: Sunday, Time: 09:00 - 12:00, Score: 80, Dominance: Unrivaled, Shape: Sharp Spike, Style: Storytelling (Narrative flow)","Data Context:
+- Day: Sunday
+- Time: 09:00 - 12:00 (Mid-Morning)
+- Score: 80/100 (Runner-up: 57)
+- Pattern: Unrivaled dominance with Sharp Spike behavior
+- User Behavior: professionals active during work breaks
+
+Task: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.
+Required Style: Storytelling (Narrative flow)
+Keep it under 40 words and be specific about the data patterns."

@@ -1,0 +1,502 @@
+[
+  {
+    "row_id": 3300,
+    "student_input": "Day: Thursday, Time: 22:00 - 00:00, Score: 77, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Advisory (Consultative, Helpful)",
+    "prompt_for_gemini": "Data Context:\n- Day: Thursday\n- Time: 22:00 - 00:00 (Late Night)\n- Score: 77/100 (Runner-up: 55)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: night owls scrolling before sleep\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Advisory (Consultative, Helpful)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3301,
+    "student_input": "Day: Saturday, Time: 12:00 - 13:00, Score: 94, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Advisory (Consultative, Helpful)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 12:00 - 13:00 (Lunch Break)\n- Score: 94/100 (Runner-up: 75)\n- Pattern: Clear Lead dominance with Sustained Plateau behavior\n- User Behavior: high engagement during midday rest\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Advisory (Consultative, Helpful)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3302,
+    "student_input": "Day: Tuesday, Time: 19:00 - 22:00, Score: 99, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Urgent (Creating FOMO/Action)",
+    "prompt_for_gemini": "Data Context:\n- Day: Tuesday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 99/100 (Runner-up: 76)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Urgent (Creating FOMO/Action)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3303,
+    "student_input": "Day: Saturday, Time: 17:00 - 19:00, Score: 88, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Analytic (Focus on numbers & trends)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 17:00 - 19:00 (Commute Hours)\n- Score: 88/100 (Runner-up: 45)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: audiences active during transit\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Analytic (Focus on numbers & trends)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3304,
+    "student_input": "Day: Saturday, Time: 09:00 - 12:00, Score: 71, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Persuasive (Convincing)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 09:00 - 12:00 (Mid-Morning)\n- Score: 71/100 (Runner-up: 54)\n- Pattern: Clear Lead dominance with Sustained Plateau behavior\n- User Behavior: professionals active during work breaks\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Persuasive (Convincing)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3305,
+    "student_input": "Day: Thursday, Time: 06:00 - 09:00, Score: 90, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Strategic (Focus on ROI & Growth)",
+    "prompt_for_gemini": "Data Context:\n- Day: Thursday\n- Time: 06:00 - 09:00 (Morning Rush)\n- Score: 90/100 (Runner-up: 48)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: users checking phones before work\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Strategic (Focus on ROI & Growth)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3306,
+    "student_input": "Day: Saturday, Time: 06:00 - 09:00, Score: 87, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Advisory (Consultative, Helpful)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 06:00 - 09:00 (Morning Rush)\n- Score: 87/100 (Runner-up: 55)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: users checking phones before work\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Advisory (Consultative, Helpful)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3307,
+    "student_input": "Day: Sunday, Time: 09:00 - 12:00, Score: 78, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Advisory (Consultative, Helpful)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 09:00 - 12:00 (Mid-Morning)\n- Score: 78/100 (Runner-up: 52)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: professionals active during work breaks\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Advisory (Consultative, Helpful)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3308,
+    "student_input": "Day: Saturday, Time: 12:00 - 13:00, Score: 88, Dominance: Unrivaled, Shape: Sharp Spike, Style: Persuasive (Convincing)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 12:00 - 13:00 (Lunch Break)\n- Score: 88/100 (Runner-up: 65)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: high engagement during midday rest\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Persuasive (Convincing)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3309,
+    "student_input": "Day: Monday, Time: 19:00 - 22:00, Score: 90, Dominance: Unrivaled, Shape: Sharp Spike, Style: Executive (Brief, Direct, Decision-oriented)",
+    "prompt_for_gemini": "Data Context:\n- Day: Monday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 90/100 (Runner-up: 63)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Executive (Brief, Direct, Decision-oriented)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3310,
+    "student_input": "Day: Tuesday, Time: 06:00 - 09:00, Score: 96, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Storytelling (Narrative flow)",
+    "prompt_for_gemini": "Data Context:\n- Day: Tuesday\n- Time: 06:00 - 09:00 (Morning Rush)\n- Score: 96/100 (Runner-up: 56)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: users checking phones before work\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Storytelling (Narrative flow)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3311,
+    "student_input": "Day: Wednesday, Time: 19:00 - 22:00, Score: 79, Dominance: Clear Lead, Shape: Sharp Spike, Style: Analytic (Focus on numbers & trends)",
+    "prompt_for_gemini": "Data Context:\n- Day: Wednesday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 79/100 (Runner-up: 63)\n- Pattern: Clear Lead dominance with Sharp Spike behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Analytic (Focus on numbers & trends)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3312,
+    "student_input": "Day: Saturday, Time: 00:00 - 06:00, Score: 92, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Relaxed (Casual professional)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 00:00 - 06:00 (Overnight)\n- Score: 92/100 (Runner-up: 56)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: minimal but dedicated late-night audience\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Relaxed (Casual professional)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3313,
+    "student_input": "Day: Sunday, Time: 06:00 - 09:00, Score: 77, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Strategic (Focus on ROI & Growth)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 06:00 - 09:00 (Morning Rush)\n- Score: 77/100 (Runner-up: 52)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: users checking phones before work\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Strategic (Focus on ROI & Growth)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3314,
+    "student_input": "Day: Saturday, Time: 00:00 - 06:00, Score: 86, Dominance: Tight Race, Shape: Sustained Plateau, Style: Relaxed (Casual professional)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 00:00 - 06:00 (Overnight)\n- Score: 86/100 (Runner-up: 76)\n- Pattern: Tight Race dominance with Sustained Plateau behavior\n- User Behavior: minimal but dedicated late-night audience\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Relaxed (Casual professional)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3315,
+    "student_input": "Day: Sunday, Time: 13:00 - 17:00, Score: 90, Dominance: Clear Lead, Shape: Sharp Spike, Style: Advisory (Consultative, Helpful)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 13:00 - 17:00 (Afternoon Lull)\n- Score: 90/100 (Runner-up: 70)\n- Pattern: Clear Lead dominance with Sharp Spike behavior\n- User Behavior: moderate activity during work hours\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Advisory (Consultative, Helpful)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3316,
+    "student_input": "Day: Wednesday, Time: 19:00 - 22:00, Score: 82, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Executive (Brief, Direct, Decision-oriented)",
+    "prompt_for_gemini": "Data Context:\n- Day: Wednesday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 82/100 (Runner-up: 47)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Executive (Brief, Direct, Decision-oriented)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3317,
+    "student_input": "Day: Monday, Time: 12:00 - 13:00, Score: 70, Dominance: Tight Race, Shape: Sharp Spike, Style: Executive (Brief, Direct, Decision-oriented)",
+    "prompt_for_gemini": "Data Context:\n- Day: Monday\n- Time: 12:00 - 13:00 (Lunch Break)\n- Score: 70/100 (Runner-up: 60)\n- Pattern: Tight Race dominance with Sharp Spike behavior\n- User Behavior: high engagement during midday rest\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Executive (Brief, Direct, Decision-oriented)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3318,
+    "student_input": "Day: Monday, Time: 19:00 - 22:00, Score: 84, Dominance: Tight Race, Shape: Sustained Plateau, Style: Enthusiastic (High energy, Marketing tone)",
+    "prompt_for_gemini": "Data Context:\n- Day: Monday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 84/100 (Runner-up: 81)\n- Pattern: Tight Race dominance with Sustained Plateau behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Enthusiastic (High energy, Marketing tone)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3319,
+    "student_input": "Day: Wednesday, Time: 17:00 - 19:00, Score: 77, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Advisory (Consultative, Helpful)",
+    "prompt_for_gemini": "Data Context:\n- Day: Wednesday\n- Time: 17:00 - 19:00 (Commute Hours)\n- Score: 77/100 (Runner-up: 54)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: audiences active during transit\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Advisory (Consultative, Helpful)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3320,
+    "student_input": "Day: Thursday, Time: 19:00 - 22:00, Score: 82, Dominance: Unrivaled, Shape: Sharp Spike, Style: Storytelling (Narrative flow)",
+    "prompt_for_gemini": "Data Context:\n- Day: Thursday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 82/100 (Runner-up: 55)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Storytelling (Narrative flow)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3321,
+    "student_input": "Day: Thursday, Time: 00:00 - 06:00, Score: 96, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Advisory (Consultative, Helpful)",
+    "prompt_for_gemini": "Data Context:\n- Day: Thursday\n- Time: 00:00 - 06:00 (Overnight)\n- Score: 96/100 (Runner-up: 73)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: minimal but dedicated late-night audience\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Advisory (Consultative, Helpful)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3322,
+    "student_input": "Day: Friday, Time: 12:00 - 13:00, Score: 75, Dominance: Tight Race, Shape: Sharp Spike, Style: Executive (Brief, Direct, Decision-oriented)",
+    "prompt_for_gemini": "Data Context:\n- Day: Friday\n- Time: 12:00 - 13:00 (Lunch Break)\n- Score: 75/100 (Runner-up: 74)\n- Pattern: Tight Race dominance with Sharp Spike behavior\n- User Behavior: high engagement during midday rest\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Executive (Brief, Direct, Decision-oriented)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3323,
+    "student_input": "Day: Friday, Time: 19:00 - 22:00, Score: 77, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Advisory (Consultative, Helpful)",
+    "prompt_for_gemini": "Data Context:\n- Day: Friday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 77/100 (Runner-up: 59)\n- Pattern: Clear Lead dominance with Sustained Plateau behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Advisory (Consultative, Helpful)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3324,
+    "student_input": "Day: Tuesday, Time: 17:00 - 19:00, Score: 94, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Storytelling (Narrative flow)",
+    "prompt_for_gemini": "Data Context:\n- Day: Tuesday\n- Time: 17:00 - 19:00 (Commute Hours)\n- Score: 94/100 (Runner-up: 74)\n- Pattern: Clear Lead dominance with Sustained Plateau behavior\n- User Behavior: audiences active during transit\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Storytelling (Narrative flow)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3325,
+    "student_input": "Day: Monday, Time: 09:00 - 12:00, Score: 93, Dominance: Clear Lead, Shape: Sharp Spike, Style: Detailed (Deep dive analysis)",
+    "prompt_for_gemini": "Data Context:\n- Day: Monday\n- Time: 09:00 - 12:00 (Mid-Morning)\n- Score: 93/100 (Runner-up: 74)\n- Pattern: Clear Lead dominance with Sharp Spike behavior\n- User Behavior: professionals active during work breaks\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Detailed (Deep dive analysis)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3326,
+    "student_input": "Day: Thursday, Time: 17:00 - 19:00, Score: 76, Dominance: Unrivaled, Shape: Sharp Spike, Style: Strategic (Focus on ROI & Growth)",
+    "prompt_for_gemini": "Data Context:\n- Day: Thursday\n- Time: 17:00 - 19:00 (Commute Hours)\n- Score: 76/100 (Runner-up: 40)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: audiences active during transit\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Strategic (Focus on ROI & Growth)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3327,
+    "student_input": "Day: Tuesday, Time: 17:00 - 19:00, Score: 75, Dominance: Clear Lead, Shape: Sharp Spike, Style: Advisory (Consultative, Helpful)",
+    "prompt_for_gemini": "Data Context:\n- Day: Tuesday\n- Time: 17:00 - 19:00 (Commute Hours)\n- Score: 75/100 (Runner-up: 58)\n- Pattern: Clear Lead dominance with Sharp Spike behavior\n- User Behavior: audiences active during transit\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Advisory (Consultative, Helpful)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3328,
+    "student_input": "Day: Wednesday, Time: 22:00 - 00:00, Score: 86, Dominance: Clear Lead, Shape: Sharp Spike, Style: Persuasive (Convincing)",
+    "prompt_for_gemini": "Data Context:\n- Day: Wednesday\n- Time: 22:00 - 00:00 (Late Night)\n- Score: 86/100 (Runner-up: 69)\n- Pattern: Clear Lead dominance with Sharp Spike behavior\n- User Behavior: night owls scrolling before sleep\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Persuasive (Convincing)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3329,
+    "student_input": "Day: Friday, Time: 17:00 - 19:00, Score: 96, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Urgent (Creating FOMO/Action)",
+    "prompt_for_gemini": "Data Context:\n- Day: Friday\n- Time: 17:00 - 19:00 (Commute Hours)\n- Score: 96/100 (Runner-up: 85)\n- Pattern: Clear Lead dominance with Sustained Plateau behavior\n- User Behavior: audiences active during transit\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Urgent (Creating FOMO/Action)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3330,
+    "student_input": "Day: Sunday, Time: 06:00 - 09:00, Score: 93, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Detailed (Deep dive analysis)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 06:00 - 09:00 (Morning Rush)\n- Score: 93/100 (Runner-up: 75)\n- Pattern: Clear Lead dominance with Sustained Plateau behavior\n- User Behavior: users checking phones before work\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Detailed (Deep dive analysis)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3331,
+    "student_input": "Day: Sunday, Time: 17:00 - 19:00, Score: 78, Dominance: Clear Lead, Shape: Sharp Spike, Style: Detailed (Deep dive analysis)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 17:00 - 19:00 (Commute Hours)\n- Score: 78/100 (Runner-up: 61)\n- Pattern: Clear Lead dominance with Sharp Spike behavior\n- User Behavior: audiences active during transit\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Detailed (Deep dive analysis)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3332,
+    "student_input": "Day: Wednesday, Time: 22:00 - 00:00, Score: 73, Dominance: Clear Lead, Shape: Sharp Spike, Style: Urgent (Creating FOMO/Action)",
+    "prompt_for_gemini": "Data Context:\n- Day: Wednesday\n- Time: 22:00 - 00:00 (Late Night)\n- Score: 73/100 (Runner-up: 61)\n- Pattern: Clear Lead dominance with Sharp Spike behavior\n- User Behavior: night owls scrolling before sleep\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Urgent (Creating FOMO/Action)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3333,
+    "student_input": "Day: Sunday, Time: 19:00 - 22:00, Score: 72, Dominance: Tight Race, Shape: Sustained Plateau, Style: Executive (Brief, Direct, Decision-oriented)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 72/100 (Runner-up: 64)\n- Pattern: Tight Race dominance with Sustained Plateau behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Executive (Brief, Direct, Decision-oriented)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3334,
+    "student_input": "Day: Saturday, Time: 19:00 - 22:00, Score: 90, Dominance: Clear Lead, Shape: Sharp Spike, Style: Analytic (Focus on numbers & trends)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 90/100 (Runner-up: 72)\n- Pattern: Clear Lead dominance with Sharp Spike behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Analytic (Focus on numbers & trends)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3335,
+    "student_input": "Day: Saturday, Time: 13:00 - 17:00, Score: 76, Dominance: Unrivaled, Shape: Sharp Spike, Style: Urgent (Creating FOMO/Action)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 13:00 - 17:00 (Afternoon Lull)\n- Score: 76/100 (Runner-up: 45)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: moderate activity during work hours\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Urgent (Creating FOMO/Action)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3336,
+    "student_input": "Day: Saturday, Time: 13:00 - 17:00, Score: 86, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Advisory (Consultative, Helpful)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 13:00 - 17:00 (Afternoon Lull)\n- Score: 86/100 (Runner-up: 52)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: moderate activity during work hours\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Advisory (Consultative, Helpful)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3337,
+    "student_input": "Day: Thursday, Time: 00:00 - 06:00, Score: 95, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Enthusiastic (High energy, Marketing tone)",
+    "prompt_for_gemini": "Data Context:\n- Day: Thursday\n- Time: 00:00 - 06:00 (Overnight)\n- Score: 95/100 (Runner-up: 64)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: minimal but dedicated late-night audience\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Enthusiastic (High energy, Marketing tone)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3338,
+    "student_input": "Day: Saturday, Time: 19:00 - 22:00, Score: 82, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Relaxed (Casual professional)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 82/100 (Runner-up: 60)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Relaxed (Casual professional)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3339,
+    "student_input": "Day: Friday, Time: 19:00 - 22:00, Score: 80, Dominance: Unrivaled, Shape: Sharp Spike, Style: Urgent (Creating FOMO/Action)",
+    "prompt_for_gemini": "Data Context:\n- Day: Friday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 80/100 (Runner-up: 49)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Urgent (Creating FOMO/Action)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3340,
+    "student_input": "Day: Sunday, Time: 12:00 - 13:00, Score: 94, Dominance: Tight Race, Shape: Sustained Plateau, Style: Relaxed (Casual professional)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 12:00 - 13:00 (Lunch Break)\n- Score: 94/100 (Runner-up: 90)\n- Pattern: Tight Race dominance with Sustained Plateau behavior\n- User Behavior: high engagement during midday rest\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Relaxed (Casual professional)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3341,
+    "student_input": "Day: Sunday, Time: 06:00 - 09:00, Score: 75, Dominance: Tight Race, Shape: Sharp Spike, Style: Analytic (Focus on numbers & trends)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 06:00 - 09:00 (Morning Rush)\n- Score: 75/100 (Runner-up: 73)\n- Pattern: Tight Race dominance with Sharp Spike behavior\n- User Behavior: users checking phones before work\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Analytic (Focus on numbers & trends)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3342,
+    "student_input": "Day: Tuesday, Time: 06:00 - 09:00, Score: 91, Dominance: Tight Race, Shape: Sustained Plateau, Style: Enthusiastic (High energy, Marketing tone)",
+    "prompt_for_gemini": "Data Context:\n- Day: Tuesday\n- Time: 06:00 - 09:00 (Morning Rush)\n- Score: 91/100 (Runner-up: 84)\n- Pattern: Tight Race dominance with Sustained Plateau behavior\n- User Behavior: users checking phones before work\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Enthusiastic (High energy, Marketing tone)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3343,
+    "student_input": "Day: Monday, Time: 22:00 - 00:00, Score: 97, Dominance: Unrivaled, Shape: Sharp Spike, Style: Storytelling (Narrative flow)",
+    "prompt_for_gemini": "Data Context:\n- Day: Monday\n- Time: 22:00 - 00:00 (Late Night)\n- Score: 97/100 (Runner-up: 46)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: night owls scrolling before sleep\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Storytelling (Narrative flow)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3344,
+    "student_input": "Day: Monday, Time: 19:00 - 22:00, Score: 80, Dominance: Unrivaled, Shape: Sharp Spike, Style: Enthusiastic (High energy, Marketing tone)",
+    "prompt_for_gemini": "Data Context:\n- Day: Monday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 80/100 (Runner-up: 58)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Enthusiastic (High energy, Marketing tone)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3345,
+    "student_input": "Day: Friday, Time: 17:00 - 19:00, Score: 77, Dominance: Tight Race, Shape: Sharp Spike, Style: Storytelling (Narrative flow)",
+    "prompt_for_gemini": "Data Context:\n- Day: Friday\n- Time: 17:00 - 19:00 (Commute Hours)\n- Score: 77/100 (Runner-up: 68)\n- Pattern: Tight Race dominance with Sharp Spike behavior\n- User Behavior: audiences active during transit\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Storytelling (Narrative flow)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3346,
+    "student_input": "Day: Thursday, Time: 22:00 - 00:00, Score: 76, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Relaxed (Casual professional)",
+    "prompt_for_gemini": "Data Context:\n- Day: Thursday\n- Time: 22:00 - 00:00 (Late Night)\n- Score: 76/100 (Runner-up: 60)\n- Pattern: Clear Lead dominance with Sustained Plateau behavior\n- User Behavior: night owls scrolling before sleep\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Relaxed (Casual professional)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3347,
+    "student_input": "Day: Monday, Time: 22:00 - 00:00, Score: 81, Dominance: Unrivaled, Shape: Sharp Spike, Style: Storytelling (Narrative flow)",
+    "prompt_for_gemini": "Data Context:\n- Day: Monday\n- Time: 22:00 - 00:00 (Late Night)\n- Score: 81/100 (Runner-up: 57)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: night owls scrolling before sleep\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Storytelling (Narrative flow)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3348,
+    "student_input": "Day: Sunday, Time: 19:00 - 22:00, Score: 90, Dominance: Tight Race, Shape: Sharp Spike, Style: Strategic (Focus on ROI & Growth)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 90/100 (Runner-up: 81)\n- Pattern: Tight Race dominance with Sharp Spike behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Strategic (Focus on ROI & Growth)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3349,
+    "student_input": "Day: Saturday, Time: 22:00 - 00:00, Score: 91, Dominance: Tight Race, Shape: Sharp Spike, Style: Enthusiastic (High energy, Marketing tone)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 22:00 - 00:00 (Late Night)\n- Score: 91/100 (Runner-up: 84)\n- Pattern: Tight Race dominance with Sharp Spike behavior\n- User Behavior: night owls scrolling before sleep\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Enthusiastic (High energy, Marketing tone)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3350,
+    "student_input": "Day: Wednesday, Time: 09:00 - 12:00, Score: 73, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Executive (Brief, Direct, Decision-oriented)",
+    "prompt_for_gemini": "Data Context:\n- Day: Wednesday\n- Time: 09:00 - 12:00 (Mid-Morning)\n- Score: 73/100 (Runner-up: 50)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: professionals active during work breaks\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Executive (Brief, Direct, Decision-oriented)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3351,
+    "student_input": "Day: Saturday, Time: 22:00 - 00:00, Score: 88, Dominance: Tight Race, Shape: Sharp Spike, Style: Storytelling (Narrative flow)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 22:00 - 00:00 (Late Night)\n- Score: 88/100 (Runner-up: 80)\n- Pattern: Tight Race dominance with Sharp Spike behavior\n- User Behavior: night owls scrolling before sleep\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Storytelling (Narrative flow)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3352,
+    "student_input": "Day: Monday, Time: 13:00 - 17:00, Score: 94, Dominance: Unrivaled, Shape: Sharp Spike, Style: Detailed (Deep dive analysis)",
+    "prompt_for_gemini": "Data Context:\n- Day: Monday\n- Time: 13:00 - 17:00 (Afternoon Lull)\n- Score: 94/100 (Runner-up: 47)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: moderate activity during work hours\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Detailed (Deep dive analysis)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3353,
+    "student_input": "Day: Sunday, Time: 09:00 - 12:00, Score: 86, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Persuasive (Convincing)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 09:00 - 12:00 (Mid-Morning)\n- Score: 86/100 (Runner-up: 48)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: professionals active during work breaks\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Persuasive (Convincing)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3354,
+    "student_input": "Day: Saturday, Time: 09:00 - 12:00, Score: 84, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Detailed (Deep dive analysis)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 09:00 - 12:00 (Mid-Morning)\n- Score: 84/100 (Runner-up: 53)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: professionals active during work breaks\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Detailed (Deep dive analysis)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3355,
+    "student_input": "Day: Sunday, Time: 19:00 - 22:00, Score: 75, Dominance: Tight Race, Shape: Sustained Plateau, Style: Advisory (Consultative, Helpful)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 75/100 (Runner-up: 74)\n- Pattern: Tight Race dominance with Sustained Plateau behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Advisory (Consultative, Helpful)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3356,
+    "student_input": "Day: Tuesday, Time: 12:00 - 13:00, Score: 84, Dominance: Unrivaled, Shape: Sharp Spike, Style: Advisory (Consultative, Helpful)",
+    "prompt_for_gemini": "Data Context:\n- Day: Tuesday\n- Time: 12:00 - 13:00 (Lunch Break)\n- Score: 84/100 (Runner-up: 51)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: high engagement during midday rest\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Advisory (Consultative, Helpful)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3357,
+    "student_input": "Day: Sunday, Time: 17:00 - 19:00, Score: 86, Dominance: Tight Race, Shape: Sharp Spike, Style: Urgent (Creating FOMO/Action)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 17:00 - 19:00 (Commute Hours)\n- Score: 86/100 (Runner-up: 81)\n- Pattern: Tight Race dominance with Sharp Spike behavior\n- User Behavior: audiences active during transit\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Urgent (Creating FOMO/Action)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3358,
+    "student_input": "Day: Sunday, Time: 00:00 - 06:00, Score: 81, Dominance: Tight Race, Shape: Sharp Spike, Style: Enthusiastic (High energy, Marketing tone)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 00:00 - 06:00 (Overnight)\n- Score: 81/100 (Runner-up: 78)\n- Pattern: Tight Race dominance with Sharp Spike behavior\n- User Behavior: minimal but dedicated late-night audience\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Enthusiastic (High energy, Marketing tone)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3359,
+    "student_input": "Day: Saturday, Time: 09:00 - 12:00, Score: 73, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Urgent (Creating FOMO/Action)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 09:00 - 12:00 (Mid-Morning)\n- Score: 73/100 (Runner-up: 42)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: professionals active during work breaks\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Urgent (Creating FOMO/Action)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3360,
+    "student_input": "Day: Saturday, Time: 13:00 - 17:00, Score: 81, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Strategic (Focus on ROI & Growth)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 13:00 - 17:00 (Afternoon Lull)\n- Score: 81/100 (Runner-up: 49)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: moderate activity during work hours\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Strategic (Focus on ROI & Growth)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3361,
+    "student_input": "Day: Saturday, Time: 00:00 - 06:00, Score: 97, Dominance: Tight Race, Shape: Sharp Spike, Style: Executive (Brief, Direct, Decision-oriented)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 00:00 - 06:00 (Overnight)\n- Score: 97/100 (Runner-up: 89)\n- Pattern: Tight Race dominance with Sharp Spike behavior\n- User Behavior: minimal but dedicated late-night audience\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Executive (Brief, Direct, Decision-oriented)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3362,
+    "student_input": "Day: Sunday, Time: 17:00 - 19:00, Score: 77, Dominance: Tight Race, Shape: Sharp Spike, Style: Executive (Brief, Direct, Decision-oriented)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 17:00 - 19:00 (Commute Hours)\n- Score: 77/100 (Runner-up: 72)\n- Pattern: Tight Race dominance with Sharp Spike behavior\n- User Behavior: audiences active during transit\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Executive (Brief, Direct, Decision-oriented)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3363,
+    "student_input": "Day: Monday, Time: 19:00 - 22:00, Score: 71, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Enthusiastic (High energy, Marketing tone)",
+    "prompt_for_gemini": "Data Context:\n- Day: Monday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 71/100 (Runner-up: 41)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Enthusiastic (High energy, Marketing tone)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3364,
+    "student_input": "Day: Monday, Time: 12:00 - 13:00, Score: 93, Dominance: Unrivaled, Shape: Sharp Spike, Style: Relaxed (Casual professional)",
+    "prompt_for_gemini": "Data Context:\n- Day: Monday\n- Time: 12:00 - 13:00 (Lunch Break)\n- Score: 93/100 (Runner-up: 58)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: high engagement during midday rest\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Relaxed (Casual professional)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3365,
+    "student_input": "Day: Wednesday, Time: 17:00 - 19:00, Score: 90, Dominance: Tight Race, Shape: Sharp Spike, Style: Persuasive (Convincing)",
+    "prompt_for_gemini": "Data Context:\n- Day: Wednesday\n- Time: 17:00 - 19:00 (Commute Hours)\n- Score: 90/100 (Runner-up: 85)\n- Pattern: Tight Race dominance with Sharp Spike behavior\n- User Behavior: audiences active during transit\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Persuasive (Convincing)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3366,
+    "student_input": "Day: Saturday, Time: 06:00 - 09:00, Score: 76, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Urgent (Creating FOMO/Action)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 06:00 - 09:00 (Morning Rush)\n- Score: 76/100 (Runner-up: 61)\n- Pattern: Clear Lead dominance with Sustained Plateau behavior\n- User Behavior: users checking phones before work\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Urgent (Creating FOMO/Action)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3367,
+    "student_input": "Day: Thursday, Time: 09:00 - 12:00, Score: 72, Dominance: Clear Lead, Shape: Sharp Spike, Style: Detailed (Deep dive analysis)",
+    "prompt_for_gemini": "Data Context:\n- Day: Thursday\n- Time: 09:00 - 12:00 (Mid-Morning)\n- Score: 72/100 (Runner-up: 56)\n- Pattern: Clear Lead dominance with Sharp Spike behavior\n- User Behavior: professionals active during work breaks\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Detailed (Deep dive analysis)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3368,
+    "student_input": "Day: Wednesday, Time: 06:00 - 09:00, Score: 96, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Strategic (Focus on ROI & Growth)",
+    "prompt_for_gemini": "Data Context:\n- Day: Wednesday\n- Time: 06:00 - 09:00 (Morning Rush)\n- Score: 96/100 (Runner-up: 51)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: users checking phones before work\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Strategic (Focus on ROI & Growth)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3369,
+    "student_input": "Day: Wednesday, Time: 22:00 - 00:00, Score: 79, Dominance: Tight Race, Shape: Sustained Plateau, Style: Persuasive (Convincing)",
+    "prompt_for_gemini": "Data Context:\n- Day: Wednesday\n- Time: 22:00 - 00:00 (Late Night)\n- Score: 79/100 (Runner-up: 69)\n- Pattern: Tight Race dominance with Sustained Plateau behavior\n- User Behavior: night owls scrolling before sleep\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Persuasive (Convincing)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3370,
+    "student_input": "Day: Saturday, Time: 12:00 - 13:00, Score: 93, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Analytic (Focus on numbers & trends)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 12:00 - 13:00 (Lunch Break)\n- Score: 93/100 (Runner-up: 80)\n- Pattern: Clear Lead dominance with Sustained Plateau behavior\n- User Behavior: high engagement during midday rest\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Analytic (Focus on numbers & trends)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3371,
+    "student_input": "Day: Monday, Time: 22:00 - 00:00, Score: 97, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Persuasive (Convincing)",
+    "prompt_for_gemini": "Data Context:\n- Day: Monday\n- Time: 22:00 - 00:00 (Late Night)\n- Score: 97/100 (Runner-up: 66)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: night owls scrolling before sleep\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Persuasive (Convincing)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3372,
+    "student_input": "Day: Tuesday, Time: 00:00 - 06:00, Score: 77, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Enthusiastic (High energy, Marketing tone)",
+    "prompt_for_gemini": "Data Context:\n- Day: Tuesday\n- Time: 00:00 - 06:00 (Overnight)\n- Score: 77/100 (Runner-up: 53)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: minimal but dedicated late-night audience\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Enthusiastic (High energy, Marketing tone)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3373,
+    "student_input": "Day: Thursday, Time: 00:00 - 06:00, Score: 80, Dominance: Clear Lead, Shape: Sharp Spike, Style: Storytelling (Narrative flow)",
+    "prompt_for_gemini": "Data Context:\n- Day: Thursday\n- Time: 00:00 - 06:00 (Overnight)\n- Score: 80/100 (Runner-up: 62)\n- Pattern: Clear Lead dominance with Sharp Spike behavior\n- User Behavior: minimal but dedicated late-night audience\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Storytelling (Narrative flow)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3374,
+    "student_input": "Day: Thursday, Time: 06:00 - 09:00, Score: 99, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Storytelling (Narrative flow)",
+    "prompt_for_gemini": "Data Context:\n- Day: Thursday\n- Time: 06:00 - 09:00 (Morning Rush)\n- Score: 99/100 (Runner-up: 81)\n- Pattern: Clear Lead dominance with Sustained Plateau behavior\n- User Behavior: users checking phones before work\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Storytelling (Narrative flow)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3375,
+    "student_input": "Day: Sunday, Time: 22:00 - 00:00, Score: 88, Dominance: Tight Race, Shape: Sustained Plateau, Style: Relaxed (Casual professional)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 22:00 - 00:00 (Late Night)\n- Score: 88/100 (Runner-up: 88)\n- Pattern: Tight Race dominance with Sustained Plateau behavior\n- User Behavior: night owls scrolling before sleep\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Relaxed (Casual professional)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3376,
+    "student_input": "Day: Thursday, Time: 17:00 - 19:00, Score: 77, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Analytic (Focus on numbers & trends)",
+    "prompt_for_gemini": "Data Context:\n- Day: Thursday\n- Time: 17:00 - 19:00 (Commute Hours)\n- Score: 77/100 (Runner-up: 66)\n- Pattern: Clear Lead dominance with Sustained Plateau behavior\n- User Behavior: audiences active during transit\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Analytic (Focus on numbers & trends)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3377,
+    "student_input": "Day: Monday, Time: 13:00 - 17:00, Score: 80, Dominance: Unrivaled, Shape: Sharp Spike, Style: Analytic (Focus on numbers & trends)",
+    "prompt_for_gemini": "Data Context:\n- Day: Monday\n- Time: 13:00 - 17:00 (Afternoon Lull)\n- Score: 80/100 (Runner-up: 49)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: moderate activity during work hours\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Analytic (Focus on numbers & trends)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3378,
+    "student_input": "Day: Tuesday, Time: 12:00 - 13:00, Score: 91, Dominance: Clear Lead, Shape: Sharp Spike, Style: Analytic (Focus on numbers & trends)",
+    "prompt_for_gemini": "Data Context:\n- Day: Tuesday\n- Time: 12:00 - 13:00 (Lunch Break)\n- Score: 91/100 (Runner-up: 77)\n- Pattern: Clear Lead dominance with Sharp Spike behavior\n- User Behavior: high engagement during midday rest\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Analytic (Focus on numbers & trends)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3379,
+    "student_input": "Day: Tuesday, Time: 06:00 - 09:00, Score: 99, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Urgent (Creating FOMO/Action)",
+    "prompt_for_gemini": "Data Context:\n- Day: Tuesday\n- Time: 06:00 - 09:00 (Morning Rush)\n- Score: 99/100 (Runner-up: 66)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: users checking phones before work\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Urgent (Creating FOMO/Action)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3380,
+    "student_input": "Day: Friday, Time: 13:00 - 17:00, Score: 98, Dominance: Tight Race, Shape: Sharp Spike, Style: Relaxed (Casual professional)",
+    "prompt_for_gemini": "Data Context:\n- Day: Friday\n- Time: 13:00 - 17:00 (Afternoon Lull)\n- Score: 98/100 (Runner-up: 92)\n- Pattern: Tight Race dominance with Sharp Spike behavior\n- User Behavior: moderate activity during work hours\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Relaxed (Casual professional)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3381,
+    "student_input": "Day: Sunday, Time: 22:00 - 00:00, Score: 77, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Persuasive (Convincing)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 22:00 - 00:00 (Late Night)\n- Score: 77/100 (Runner-up: 49)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: night owls scrolling before sleep\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Persuasive (Convincing)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3382,
+    "student_input": "Day: Saturday, Time: 13:00 - 17:00, Score: 91, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Advisory (Consultative, Helpful)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 13:00 - 17:00 (Afternoon Lull)\n- Score: 91/100 (Runner-up: 47)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: moderate activity during work hours\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Advisory (Consultative, Helpful)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3383,
+    "student_input": "Day: Wednesday, Time: 13:00 - 17:00, Score: 75, Dominance: Tight Race, Shape: Sharp Spike, Style: Persuasive (Convincing)",
+    "prompt_for_gemini": "Data Context:\n- Day: Wednesday\n- Time: 13:00 - 17:00 (Afternoon Lull)\n- Score: 75/100 (Runner-up: 71)\n- Pattern: Tight Race dominance with Sharp Spike behavior\n- User Behavior: moderate activity during work hours\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Persuasive (Convincing)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3384,
+    "student_input": "Day: Friday, Time: 12:00 - 13:00, Score: 71, Dominance: Unrivaled, Shape: Sharp Spike, Style: Detailed (Deep dive analysis)",
+    "prompt_for_gemini": "Data Context:\n- Day: Friday\n- Time: 12:00 - 13:00 (Lunch Break)\n- Score: 71/100 (Runner-up: 49)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: high engagement during midday rest\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Detailed (Deep dive analysis)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3385,
+    "student_input": "Day: Saturday, Time: 09:00 - 12:00, Score: 96, Dominance: Unrivaled, Shape: Sharp Spike, Style: Persuasive (Convincing)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 09:00 - 12:00 (Mid-Morning)\n- Score: 96/100 (Runner-up: 72)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: professionals active during work breaks\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Persuasive (Convincing)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3386,
+    "student_input": "Day: Sunday, Time: 22:00 - 00:00, Score: 76, Dominance: Unrivaled, Shape: Sharp Spike, Style: Analytic (Focus on numbers & trends)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 22:00 - 00:00 (Late Night)\n- Score: 76/100 (Runner-up: 47)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: night owls scrolling before sleep\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Analytic (Focus on numbers & trends)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3387,
+    "student_input": "Day: Tuesday, Time: 12:00 - 13:00, Score: 81, Dominance: Clear Lead, Shape: Sharp Spike, Style: Detailed (Deep dive analysis)",
+    "prompt_for_gemini": "Data Context:\n- Day: Tuesday\n- Time: 12:00 - 13:00 (Lunch Break)\n- Score: 81/100 (Runner-up: 67)\n- Pattern: Clear Lead dominance with Sharp Spike behavior\n- User Behavior: high engagement during midday rest\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Detailed (Deep dive analysis)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3388,
+    "student_input": "Day: Sunday, Time: 06:00 - 09:00, Score: 82, Dominance: Unrivaled, Shape: Sharp Spike, Style: Strategic (Focus on ROI & Growth)",
+    "prompt_for_gemini": "Data Context:\n- Day: Sunday\n- Time: 06:00 - 09:00 (Morning Rush)\n- Score: 82/100 (Runner-up: 50)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: users checking phones before work\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Strategic (Focus on ROI & Growth)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3389,
+    "student_input": "Day: Wednesday, Time: 19:00 - 22:00, Score: 93, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Executive (Brief, Direct, Decision-oriented)",
+    "prompt_for_gemini": "Data Context:\n- Day: Wednesday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 93/100 (Runner-up: 73)\n- Pattern: Clear Lead dominance with Sustained Plateau behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Executive (Brief, Direct, Decision-oriented)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3390,
+    "student_input": "Day: Wednesday, Time: 19:00 - 22:00, Score: 88, Dominance: Unrivaled, Shape: Sharp Spike, Style: Enthusiastic (High energy, Marketing tone)",
+    "prompt_for_gemini": "Data Context:\n- Day: Wednesday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 88/100 (Runner-up: 47)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Enthusiastic (High energy, Marketing tone)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3391,
+    "student_input": "Day: Tuesday, Time: 12:00 - 13:00, Score: 83, Dominance: Clear Lead, Shape: Sustained Plateau, Style: Enthusiastic (High energy, Marketing tone)",
+    "prompt_for_gemini": "Data Context:\n- Day: Tuesday\n- Time: 12:00 - 13:00 (Lunch Break)\n- Score: 83/100 (Runner-up: 63)\n- Pattern: Clear Lead dominance with Sustained Plateau behavior\n- User Behavior: high engagement during midday rest\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Enthusiastic (High energy, Marketing tone)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3392,
+    "student_input": "Day: Thursday, Time: 09:00 - 12:00, Score: 93, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Strategic (Focus on ROI & Growth)",
+    "prompt_for_gemini": "Data Context:\n- Day: Thursday\n- Time: 09:00 - 12:00 (Mid-Morning)\n- Score: 93/100 (Runner-up: 43)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: professionals active during work breaks\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Strategic (Focus on ROI & Growth)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3393,
+    "student_input": "Day: Thursday, Time: 19:00 - 22:00, Score: 99, Dominance: Unrivaled, Shape: Sharp Spike, Style: Persuasive (Convincing)",
+    "prompt_for_gemini": "Data Context:\n- Day: Thursday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 99/100 (Runner-up: 62)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Persuasive (Convincing)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3394,
+    "student_input": "Day: Monday, Time: 19:00 - 22:00, Score: 92, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Enthusiastic (High energy, Marketing tone)",
+    "prompt_for_gemini": "Data Context:\n- Day: Monday\n- Time: 19:00 - 22:00 (Prime Time)\n- Score: 92/100 (Runner-up: 68)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: peak leisure time after dinner\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Enthusiastic (High energy, Marketing tone)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3395,
+    "student_input": "Day: Saturday, Time: 12:00 - 13:00, Score: 82, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Relaxed (Casual professional)",
+    "prompt_for_gemini": "Data Context:\n- Day: Saturday\n- Time: 12:00 - 13:00 (Lunch Break)\n- Score: 82/100 (Runner-up: 41)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: high engagement during midday rest\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Relaxed (Casual professional)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3396,
+    "student_input": "Day: Friday, Time: 00:00 - 06:00, Score: 80, Dominance: Tight Race, Shape: Sharp Spike, Style: Strategic (Focus on ROI & Growth)",
+    "prompt_for_gemini": "Data Context:\n- Day: Friday\n- Time: 00:00 - 06:00 (Overnight)\n- Score: 80/100 (Runner-up: 75)\n- Pattern: Tight Race dominance with Sharp Spike behavior\n- User Behavior: minimal but dedicated late-night audience\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Strategic (Focus on ROI & Growth)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3397,
+    "student_input": "Day: Wednesday, Time: 13:00 - 17:00, Score: 95, Dominance: Unrivaled, Shape: Sharp Spike, Style: Persuasive (Convincing)",
+    "prompt_for_gemini": "Data Context:\n- Day: Wednesday\n- Time: 13:00 - 17:00 (Afternoon Lull)\n- Score: 95/100 (Runner-up: 69)\n- Pattern: Unrivaled dominance with Sharp Spike behavior\n- User Behavior: moderate activity during work hours\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Persuasive (Convincing)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3398,
+    "student_input": "Day: Tuesday, Time: 06:00 - 09:00, Score: 85, Dominance: Clear Lead, Shape: Sharp Spike, Style: Strategic (Focus on ROI & Growth)",
+    "prompt_for_gemini": "Data Context:\n- Day: Tuesday\n- Time: 06:00 - 09:00 (Morning Rush)\n- Score: 85/100 (Runner-up: 65)\n- Pattern: Clear Lead dominance with Sharp Spike behavior\n- User Behavior: users checking phones before work\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Strategic (Focus on ROI & Growth)\nKeep it under 40 words and be specific about the data patterns."
+  },
+  {
+    "row_id": 3399,
+    "student_input": "Day: Tuesday, Time: 22:00 - 00:00, Score: 90, Dominance: Unrivaled, Shape: Sustained Plateau, Style: Relaxed (Casual professional)",
+    "prompt_for_gemini": "Data Context:\n- Day: Tuesday\n- Time: 22:00 - 00:00 (Late Night)\n- Score: 90/100 (Runner-up: 52)\n- Pattern: Unrivaled dominance with Sustained Plateau behavior\n- User Behavior: night owls scrolling before sleep\n\nTask: Write a 1-2 sentence reason WHY this is the best time to post, based on the data signals above.\nRequired Style: Relaxed (Casual professional)\nKeep it under 40 words and be specific about the data patterns."
+  }
+]

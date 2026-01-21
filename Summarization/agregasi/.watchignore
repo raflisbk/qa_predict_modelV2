@@ -1,0 +1,61 @@
+# WatchFiles ignore patterns
+# Files/folders yang tidak perlu trigger reload
+
+# Test files
+test/
+**/test_*.py
+test_*.py
+*_test.py
+
+# Documentation files
+*.md
+*.txt
+*.rst
+
+# Example/demo scripts
+*_demo.py
+*_example.py
+check_*.py
+verify_*.py
+quick_*.py
+SOLUTION_*.py
+
+# Configuration
+.env
+.env.*
+*.ini
+*.cfg
+
+# Build/cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+htmlcov/
+.coverage
+*.cover
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Git
+.git/
+.gitignore
+
+# Logs
+*.log
+logs/
+
+# Temporary
+*.tmp
+*.bak
+*.orig
